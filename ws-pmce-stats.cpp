@@ -345,8 +345,8 @@ test_result deflate_test(std::istream & input, test_result r) {
 
 void print_help() {
     std::cout << "Usage: "
-              << "wspmcestats [parameter1=val1, [parameter2=val2]]\n\n"
-              << "Pass data in via standard input. wspmcestats will simulate a WebSocket\n"
+              << "ws-pmce-stats [parameter1=val1, [parameter2=val2]]\n\n"
+              << "Pass data in via standard input. ws-pmce-stats will simulate a WebSocket\n"
               << "connection using the parameters defined below. One line of input\n"
               << "represents one websocket message. Stats about the speed, memory usage,\n"
               << "and compression ratio will be printed at the end.\n\n"

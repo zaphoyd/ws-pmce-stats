@@ -1,7 +1,7 @@
 WebSocket Per-Message Compress Extension statistics calculator
 ==============================================================
 
-wspmcestats is a program that performs some basic calculations to 
+ws-pmce-stats is a program that performs some basic calculations to 
 determine the speed, memory usage, and compression effectiveness of
 various input data sets and compression settings.
 
@@ -12,23 +12,23 @@ by the application in question.
 
 Build
 =====
-wspmcestats is written in C++. Its only dependencies are the C++11
+ws-pmce-stats is written in C++. Its only dependencies are the C++11
 standard library and the zlib headers and library. Build examples
 on several common platforms follow.
 
 Mac OS X / XCode (clang/llvm)
-clang++ -std=c++0x -stdlib=libc++ -o wspmcestats wspmcestats.cpp -lz
+clang++ -std=c++0x -stdlib=libc++ -o ws-pmce-stats ws-pmce-stats.cpp -lz
 
 Linux / GCC
-g++ -std=c++0x -o wspmcestats wspmcestats.cpp -lz
+g++ -std=c++0x -o ws-pmce-stats ws-pmce-stats.cpp -lz
 
 Usage
 =====
-This information can also be printed by running `wspmcestats --help`
+This information can also be printed by running `ws-pmce-stats --help`
 
-Usage: wspmcestats [parameter1=val1, [parameter2=val2]]
+Usage: ws-pmce-stats [parameter1=val1, [parameter2=val2]]
 
-Pass data in via standard input. wspmcestats will simulate a WebSocket
+Pass data in via standard input. ws-pmce-stats will simulate a WebSocket
 connection using the parameters defined below. One line of input
 represents one websocket message. Stats about the speed, memory usage,
 and compression ratio will be printed at the end.
@@ -68,13 +68,13 @@ Examples
 ========
 
 Run with default settings on JSON Chat example data set
-`cat datasets/jsonchat.txt | ./wspmcestats`
+`cat datasets/jsonchat.txt | ./ws-pmce-stats`
 
 Change one default setting
-`cat datasets/jsonchat.txt | ./wspmcestats context_takeover=false`
+`cat datasets/jsonchat.txt | ./ws-pmce-stats context_takeover=false`
 
 Change all default settings
-`cat datasets/jsonchat.txt | ./wspmcestats server=false sending=false context_takeover=false windowbits=8 memory_level=1 speed_level=1`
+`cat datasets/jsonchat.txt | ./ws-pmce-stats server=false sending=false context_takeover=false windowbits=8 memory_level=1 speed_level=1`
 
 Author & License
 ================
