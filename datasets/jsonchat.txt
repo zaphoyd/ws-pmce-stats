@@ -1,0 +1,664 @@
+{"type":"msg","timestamp":"00:01:40","sender":"wikibugs","msg":"03(mod) MakeCollapsible nesting of toggle id's does not work - 10https://bugzilla.wikimedia.org/33451  +comment (10krinklemail)"}
+{"type":"msg","timestamp":"00:02:09","sender":"Krinkle","msg":"badon: Hi"}
+{"type":"msg","timestamp":"00:02:16","sender":"badon","msg":"hi Krinkle "}
+{"type":"msg","timestamp":"00:05:42","sender":"Krinkle","msg":"badon: http://www.coincompendium.com/w/index.php/Sandbox/Bug_33451?debug=true look at the console"}
+{"type":"msg","timestamp":"00:05:47","sender":"Krinkle","msg":"jquery.makeCollapsible> #mw-customcollapsible-I_mw-customcollapsible-IIA: Missing toggler!"}
+{"type":"msg","timestamp":"00:05:51","sender":"Krinkle","msg":"jquery.makeCollapsible> #mw-customcollapsible-I_mw-customcollapsible-IIB: Missing toggler!"}
+{"type":"msg","timestamp":"00:05:58","sender":"Krinkle","msg":"jquery.makeCollapsible> #mw-customcollapsible-I_mw-customcollapsible-IIC: Missing toggler!"}
+{"type":"msg","timestamp":"00:06:13","sender":"Krinkle","msg":"jquery.makeCollapsible> Found custom collapsible: #mw-customcollapsible-I_mw-customcollapsible-IIC"}
+{"type":"msg","timestamp":"00:06:15","sender":"Krinkle","msg":"etc."}
+{"type":"msg","timestamp":"00:07:01","sender":"Krinkle","msg":"badon: One toggler can toggle multiple collapsibles by giving it more classes"}
+{"type":"msg","timestamp":"00:07:11","sender":"Krinkle","msg":"but you can't have a collapsible have multiple IDs"}
+{"type":"msg","timestamp":"00:07:41","sender":"Krinkle","msg":"so the list and the tables should have their own unique ID and the togglers should have multiple classes to toggle all three"}
+{"type":"msg","timestamp":"00:08:23","sender":"Krinkle","msg":"id=mw-customcollapisble-list1, id=mw-customcollapisble-table1, id=mw-customcollapisble-table2, and then the togglers will be class="mw-customtoggle-list1 mw-customtoggle-table2 mw-customtoggle-table2""}
+{"type":"msg","timestamp":"00:08:25","sender":"Krinkle","msg":"badon: ^"}
+{"type":"msg","timestamp":"00:09:33","sender":"badon","msg":"looking"}
+{"type":"msg","timestamp":"00:09:47","sender":"badon","msg":"whoops"}
+{"type":"msg","timestamp":"00:09:49","sender":"badon","msg":"OK"}
+{"type":"msg","timestamp":"00:10:10","sender":"badon","msg":"I guess that'll go in docs."}
+{"type":"msg","timestamp":"00:10:45","sender":"badon","msg":"I don't think I've ever used more than 1 id before."}
+{"type":"msg","timestamp":"00:14:53","sender":"Krinkle","msg":"It's in the W3 spec if you wanna know"}
+{"type":"msg","timestamp":"00:15:51","sender":"Krinkle","msg":"http://www.w3.org/TR/html5/elements.html#the-id-attribute"}
+{"type":"msg","timestamp":"00:15:55","sender":"Krinkle","msg":"http://www.w3.org/TR/xhtml1/#h-4.10"}
+{"type":"msg","timestamp":"00:16:34","sender":"badon","msg":"I'm sure I knew that, but forgot it. I'm to the point where I'm forgetting stuff to remember new stuff :)"}
+{"type":"msg","timestamp":"00:20:07","sender":"Krinkle","msg":"Reedy: php has a global function named "pow" ? that's aweful"}
+{"type":"msg","timestamp":"00:21:05","sender":"Krinkle","msg":"gotta love php's docs on it"}
+{"type":"msg","timestamp":"00:21:08","sender":"Krinkle","msg":""This function will convert all input to a number, even non-scalar values, which could lead to weird results."}
+{"type":"msg","timestamp":"00:21:08","sender":"Krinkle","msg":"""}
+{"type":"msg","timestamp":"00:21:10","sender":"Krinkle","msg":""weird" xD"}
+{"type":"msg","timestamp":"00:21:22","sender":"Krinkle","msg":"in order words, happy debugging"}
+{"type":"msg","timestamp":"00:21:37","sender":"Reedy","msg":"I thought it was neater than doing 1000 * 1000 * 1000...."}
+{"type":"msg","timestamp":"00:22:10","sender":"Krinkle","msg":"sure"}
+{"type":"msg","timestamp":"00:22:33","sender":"Krinkle","msg":"i'm referring to the how more than the what. It's great that it exists"}
+{"type":"msg","timestamp":"00:23:13","sender":"Krinkle","msg":"at least in javascript it's "Math.pow" although I wouldn't mind "Math.power""}
+{"type":"msg","timestamp":"00:24:37","sender":"wikibugs","msg":"14(INVALID) mw-collapsible element with multiple mw-customcollapible IDs does not work - 10https://bugzilla.wikimedia.org/33451  summary; +comment (10Krinkle)"}
+{"type":"msg","timestamp":"00:37:19","sender":"codurr","msg":"03jeroendedauw * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107759> 10/tags/extensions/SemanticMediaWiki/REL_1_7/: Tag for version 1.7."}
+{"type":"msg","timestamp":"00:42:03","sender":"codurr","msg":"New code comment: Reedy; Use elseif!; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107731#c28736>"}
+{"type":"msg","timestamp":"00:52:58","sender":"codurr","msg":"03jeroendedauw * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107760> 10/trunk/extensions/SemanticResultFormats/ (README RELEASE-NOTES SemanticResultFormats.php): 1.7 rel"}
+{"type":"msg","timestamp":"01:09:55","sender":"wikibugs","msg":"03(mod) compressOld does not run on Postgres - 10https://bugzilla.wikimedia.org/24607  +comment (10tim)"}
+{"type":"msg","timestamp":"01:57:03","sender":"wikibugs","msg":"03(mod) mw-collapsible element with multiple mw-customcollapible IDs does not work - 10https://bugzilla.wikimedia.org/33451  +comment (10fastgoldfish)"}
+{"type":"msg","timestamp":"01:59:08","sender":"wikibugs","msg":"03(mod) Global account not appearing on Special:GlobalUsers - 10https://bugzilla.wikimedia.org/30185  +comment (10vigorous action)"}
+{"type":"msg","timestamp":"02:06:03","sender":"codurr","msg":"03jeroendedauw * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107764> 10/trunk/extensions/EducationProgram/ (3 files in 2 dirs): work on mycourses"}
+{"type":"msg","timestamp":"02:37:55","sender":"checkers","msg":"hi guys, I'm running a wiki that's seeing massive amounts of text spam without any links, despite using recaptcha"}
+{"type":"msg","timestamp":"02:38:23","sender":"checkers","msg":"if recaptcha isn't stopping this stuff, what's the next step? Can I do anything short of manually controlling account creation and locking down permissions?"}
+{"type":"msg","timestamp":"02:50:01","sender":"Dantman","msg":"checkers: Wiki link?"}
+{"type":"msg","timestamp":"02:51:15","sender":"checkers","msg":"http://mewiki.project357.com/wiki/Special:RecentChanges"}
+{"type":"msg","timestamp":"02:52:10","sender":"checkers","msg":"also are there any extensions to roll back all changes made in a certain period?"}
+{"type":"msg","timestamp":"02:52:51","sender":"checkers","msg":"the quickest way I can find currently is: for each page, go to history, compare current to the most recent non-spam revision, click undo, click save changes"}
+{"type":"msg","timestamp":"02:53:46","sender":"checkers","msg":"also it would be nice to be able to remove this stuff from recent changes entirely, it cant be good for database size"}
+{"type":"msg","timestamp":"02:58:50","sender":"Dantman","msg":"Hmmm... looks a little new"}
+{"type":"msg","timestamp":"02:59:55","sender":"Dantman","msg":"Actually no... Maybe those 'are' the stupid bots"}
+{"type":"msg","timestamp":"03:00:02","sender":"Dantman","msg":"checkers: Try installing SimpleAntiSpam"}
+{"type":"msg","timestamp":"03:00:26","sender":"Dantman","msg":"Those ones might be the stupid bots that just try blindly filling any form they come by"}
+{"type":"msg","timestamp":"03:01:24","sender":"checkers","msg":"yeah, could be"}
+{"type":"msg","timestamp":"03:04:33","sender":"checkers","msg":"heh, one of the spambot IPs was over the v6 network"}
+{"type":"msg","timestamp":"03:04:54","sender":"checkers","msg":"Probably the first v6 edit, nice to see the new network being put to good use"}
+{"type":"msg","timestamp":"03:09:40","sender":"Dantman","msg":"lol"}
+[03:09:58] * Dantman  wants a v6 connection so he can test things
+{"type":"msg","timestamp":"03:27:21","sender":"checkers","msg":"thanks for the extension recommendation, I'll see how it goes"}
+{"type":"msg","timestamp":"04:10:24","sender":"wikibugs","msg":"03(NEW) Renaming user causes conflicting usernames in deleted file histories - 10https://bugzilla.wikimedia.org/33452 normal; MediaWiki: Deleting; (fetchcomms)"}
+[04:17:59] * johnduhart__  waves
+{"type":"msg","timestamp":"04:39:29","sender":"wikibugs","msg":"03(mod) mw-collapsible element with multiple mw-customcollapible IDs does not work - 10https://bugzilla.wikimedia.org/33451  +comment (10fastgoldfish)"}
+{"type":"msg","timestamp":"04:40:32","sender":"sparklesparkle","msg":"hi, anyone there?"}
+{"type":"msg","timestamp":"04:43:06","sender":"sparklesparkle","msg":"i'm having a beast of a time getting a password change using changePassword.php to work... i'm specifying what i think are all the right requirements: dbuser, dbpass, user, pass, conf, wiki yet the password change apparently fails and doesn't give me any output as to why"}
+{"type":"msg","timestamp":"04:43:50","sender":"sparklesparkle","msg":"... also specifying memory-limit too"}
+{"type":"msg","timestamp":"04:45:08","sender":"badon","msg":"I think everyone is partying.p"}
+{"type":"msg","timestamp":"04:46:04","sender":"sparklesparkle","msg":"running the script as root or the web server user makes no difference and neither does adding '=' for the arguments"}
+{"type":"msg","timestamp":"04:46:35","sender":"sparklesparkle","msg":"probably... when was the last time there was any activity of note before i showed up?"}
+{"type":"msg","timestamp":"04:48:10","sender":"sparklesparkle","msg":"this script seems to suck but it's probably just me"}
+{"type":"msg","timestamp":"04:49:15","sender":"sparklesparkle","msg":"now there's 3?"}
+{"type":"msg","timestamp":"05:26:13","sender":"johnduhart__","msg":"brings laptop to work on codw"}
+{"type":"msg","timestamp":"05:26:18","sender":"johnduhart__","msg":"forgets key on desktop"}
+[05:26:22] * johnduhart__  sighs
+{"type":"msg","timestamp":"05:28:49","sender":"wikibugs","msg":"03(ASSIGNED) Change the Disable Narayam preference to Enable Narayam - 10https://bugzilla.wikimedia.org/31917  +comment (10Santhosh Thottingal)"}
+{"type":"msg","timestamp":"05:32:10","sender":"johnduhart__","msg":"Have we already had the first bug of 2012 UTC?"}
+{"type":"msg","timestamp":"05:34:35","sender":"p858snake|l_","msg":"Bug 33452 - Renaming user causes conflicting usernames in deleted file histories / 2012-01-01 14:10:07 EST"}
+{"type":"msg","timestamp":"05:35:31","sender":"johnduhart__","msg":"yay"}
+{"type":"msg","timestamp":"05:51:20","sender":"sparklesparkle","msg":"i'm having a beast of a time getting a password change using changePassword.php to work... i'm specifying what i think are all the right requirements: dbuser, dbpass, user, pass, conf, wiki yet the password change apparently fails and doesn't give me any output as to why"}
+{"type":"msg","timestamp":"05:57:14","sender":"sparklesparkle","msg":"anything else you'd like me to add?"}
+{"type":"msg","timestamp":"06:34:01","sender":"Dantman","msg":":/ Why are my load.php runs not being cached"}
+{"type":"msg","timestamp":"07:16:31","sender":"Dantman","msg":"preilly: Is is necessary for MobileFrontend on en.m.wikipedia.org to be able to take say fr.wikipedia.org links and make them fr.m.wikipedia.org?"}
+{"type":"msg","timestamp":"07:16:35","sender":"Dantman","msg":"Is it really*"}
+{"type":"msg","timestamp":"07:55:32","sender":"Dantman","msg":"Agh"}
+{"type":"msg","timestamp":"07:55:55","sender":"Dantman","msg":"<ref>s are now screwed up displaying UNIQs"}
+{"type":"msg","timestamp":"08:00:56","sender":"bawolff","msg":"Dantman: have an example? they seem fine on my test wiki"}
+{"type":"msg","timestamp":"08:01:49","sender":"Dantman","msg":"bawolff: http://www.dragonballencyclopedia.com/wiki/Son_Goku"}
+{"type":"msg","timestamp":"08:02:14","sender":"bawolff","msg":"There's a bug in 1.18.0"}
+{"type":"msg","timestamp":"08:02:27","sender":"bawolff","msg":"its fixed on trunk"}
+{"type":"msg","timestamp":"08:02:53","sender":"bawolff","msg":"!r 99062"}
+{"type":"msg","timestamp":"08:02:53","sender":"mw-bot","msg":"https://www.mediawiki.org/wiki/Special:Code/MediaWiki/99062"}
+{"type":"msg","timestamp":"08:03:03","sender":"Dantman","msg":"keh..."}
+{"type":"msg","timestamp":"08:03:27","sender":"Dantman","msg":"So... when are we going to do that 1.18.1 release?"}
+{"type":"msg","timestamp":"08:03:40","sender":"bawolff","msg":"huh, that's odd. that revision never got merged into 1.18. I would think that would be important enough to warrant it"}
+{"type":"msg","timestamp":"08:06:26","sender":"codurr","msg":"New code comment: Bawolff; I'm re-tagging this as 1.18 - It seems like this would be an important enough issue to be back-porte; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/99062#c28737>"}
+{"type":"msg","timestamp":"08:19:10","sender":"codurr","msg":"New code comment: Nikerabbit; Why don't you use the existing logging framework btw?; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107756#c28738>"}
+{"type":"msg","timestamp":"08:24:05","sender":"wikibugs","msg":"03(mod) Add a filter to Special:WantedFiles to remove the false positives - 10https://bugzilla.wikimedia.org/33446  +comment (10bawolff+wn)"}
+{"type":"msg","timestamp":"08:27:21","sender":"Dantman","msg":"How is it that MobileFrontend detects the .m. on en.wp? It doesn't do it in my testing."}
+{"type":"msg","timestamp":"08:33:34","sender":"codurr","msg":"03nikerabbit * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107765> 10/trunk/extensions/ReplaceText/SpecialReplaceText.php: Small cleanup"}
+{"type":"msg","timestamp":"08:34:34","sender":"codurr","msg":"03nikerabbit * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107766> 10/trunk/extensions/ReplaceText/SpecialReplaceText.php: search.js doesn't exist anymore"}
+{"type":"msg","timestamp":"08:34:37","sender":"Dantman","msg":"*sigh* it also seams to rely on front end cache code that I don't have"}
+{"type":"msg","timestamp":"08:35:14","sender":"amgine","msg":"which."}
+{"type":"msg","timestamp":"08:36:26","sender":"Dantman","msg":"MobileFrontend"}
+{"type":"msg","timestamp":"08:39:06","sender":"Amgine","msg":"which you don't have, not that... <word geekishness whilst celebrating New Year's>"}
+{"type":"msg","timestamp":"08:39:26","sender":"bawolff","msg":"huh, from global usage: "This special page doesn't include usage through the ProofreadPage extension at Wikisource""}
+{"type":"msg","timestamp":"08:39:38","sender":"bawolff","msg":"Is proofread page not registering image links? :s"}
+{"type":"msg","timestamp":"08:41:38","sender":"p858snake|l_","msg":"vague memories tend to suggest it doesn't"}
+{"type":"msg","timestamp":"08:42:43","sender":"bawolff","msg":"Can I shoot that extension? :P"}
+{"type":"msg","timestamp":"08:43:00","sender":"p858snake|l_","msg":"You can shoot anything you like, As long as it's not me"}
+{"type":"msg","timestamp":"08:43:28","sender":"bawolff","msg":"lol, I'll try to keep that in mind"}
+{"type":"msg","timestamp":"08:47:58","sender":"Dantman","msg":"*sigh* There is no device with id [generic] in wurflbool(false)"}
+{"type":"msg","timestamp":"08:48:23","sender":"Dantman","msg":"I don't even know where to start fixing things anymore"}
+{"type":"msg","timestamp":"08:55:45","sender":"codurr","msg":"03nikerabbit * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107767> 10/trunk/extensions/ReplaceText/SpecialReplaceText.php: Stuff older than 1.16 not supported anymore"}
+{"type":"msg","timestamp":"09:11:38","sender":"Amgine","msg":"<asks Dantman to write an extension>"}
+{"type":"msg","timestamp":"09:15:15","sender":"Amgine","msg":"Say, Bawolff, that reminds me... about that parser hook..."}
+{"type":"msg","timestamp":"09:15:27","sender":"bawolff","msg":"yes?"}
+{"type":"msg","timestamp":"09:15:39","sender":"Amgine","msg":"Have you started it?"}
+{"type":"msg","timestamp":"09:16:34","sender":"bawolff","msg":"The if page in cat thing?"}
+{"type":"msg","timestamp":"09:17:37","sender":"Amgine","msg":"<nods?"}
+{"type":"msg","timestamp":"09:17:39","sender":"Amgine","msg":">"}
+{"type":"msg","timestamp":"09:17:50","sender":"bawolff","msg":"oh yeah, I finished that a few days ago"}
+{"type":"msg","timestamp":"09:18:02","sender":"Amgine","msg":"wench. Linky?"}
+{"type":"msg","timestamp":"09:18:09","sender":"bawolff","msg":"http://www.mediawiki.org/wiki/Extension:PageInCat"}
+{"type":"msg","timestamp":"09:18:32","sender":"bawolff","msg":"Only downside is it may increase page preview time"}
+{"type":"msg","timestamp":"09:19:02","sender":"bawolff","msg":"but unless you already have an issue with how long previews take to render, you probably won't notice that"}
+{"type":"msg","timestamp":"09:19:07","sender":"Amgine","msg":"*not* a downside worth mentioning. <reads>"}
+{"type":"msg","timestamp":"09:19:48","sender":"codurr","msg":"03jeroendedauw * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107768> 10/trunk/extensions/EducationProgram/ (6 files in 3 dirs): work on student workflow"}
+[09:20:22] * bawolff  thinks he knows how to fix bug 6220
+{"type":"msg","timestamp":"09:20:50","sender":"Amgine","msg":"<chuckles @ "download thingy...|"}
+{"type":"msg","timestamp":"09:21:02","sender":"p858snake|l_","msg":"bawolff: do it, and many people will love you long time"}
+{"type":"msg","timestamp":"09:21:53","sender":"Amgine","msg":"Mmm, remind me at some point after tomorrow, bawolff, to send you brownies. Or cookies. Or something."}
+{"type":"msg","timestamp":"09:21:59","sender":"bawolff","msg":"Well it looks like globalusage extension has most of the info already. Kind of an expensive query, but no more then the currently cached query on special:wantedfiles"}
+{"type":"msg","timestamp":"09:22:28","sender":"bawolff","msg":"yummy cookies :D"}
+{"type":"msg","timestamp":"09:22:57","sender":"Amgine","msg":"After tomorrow. <is doing a fancy dinner tomorrow>"}
+{"type":"msg","timestamp":"09:23:05","sender":"Amgine","msg":"<with a hangover>"}
+{"type":"msg","timestamp":"09:24:00","sender":"Amgine","msg":"!b 6220"}
+{"type":"msg","timestamp":"09:24:00","sender":"mw-bot","msg":"https://bugzilla.wikimedia.org/show_bug.cgi?id=6220"}
+{"type":"msg","timestamp":"09:25:24","sender":"bawolff","msg":"hmm, wouldn't take image redirects into account though :( but a start"}
+{"type":"msg","timestamp":"09:39:34","sender":"Amgine","msg":"bawolff: want another chance to be famous/indispensable/people bugging your for years into the future?"}
+{"type":"msg","timestamp":"09:39:49","sender":"bawolff","msg":"lol"}
+{"type":"msg","timestamp":"09:39:53","sender":"bawolff","msg":"what do you have in mind?"}
+{"type":"msg","timestamp":"09:40:05","sender":"Amgine","msg":"CalDAV/iCal"}
+{"type":"msg","timestamp":"09:40:41","sender":"bawolff","msg":"that sounds like a fair bit more work"}
+{"type":"msg","timestamp":"09:40:59","sender":"Amgine","msg":"it's what I'm going to pitch to the UCOSP, but there is a huge need now."}
+{"type":"msg","timestamp":"09:41:25","sender":"bawolff","msg":"What's your exact plans? given MediaWiki is generally not used as a calander"}
+{"type":"msg","timestamp":"09:42:31","sender":"Amgine","msg":"The specific need is to be able to display (in three formats) calendars, be able to create/edit/delete calendars & events, and be able to invite/email calendar events."}
+{"type":"msg","timestamp":"09:43:13","sender":"Amgine","msg":"But it will instantly expand beyond that, once anything is available."}
+{"type":"msg","timestamp":"09:43:32","sender":"Amgine","msg":"Oh, did I mention the calendars need to be federated?"}
+{"type":"msg","timestamp":"09:44:12","sender":"Amgine","msg":"(thus the CalDAV functionality, could be a standalone caldave install such as DAViCal)"}
+{"type":"msg","timestamp":"09:45:33","sender":"Amgine","msg":"Special transcludable page seems the best solution, but I dunno."}
+{"type":"msg","timestamp":"09:48:12","sender":"bawolff","msg":"hmm, any reason to use MediaWiki over some sort of specialized calander app?"}
+{"type":"msg","timestamp":"09:48:20","sender":"Amgine","msg":"wiki.occupy.net"}
+{"type":"msg","timestamp":"09:49:00","sender":"Amgine","msg":"(amongst a few other wikis we're hosting)"}
+{"type":"msg","timestamp":"09:51:02","sender":"bawolff","msg":"Honestly, that sounds like quite a fair bit of work"}
+{"type":"msg","timestamp":"09:51:28","sender":"Amgine","msg":"Yes, yes it is. I'd say it's likely a 5 year career, tbh."}
+{"type":"msg","timestamp":"09:52:26","sender":"Amgine","msg":"On the third hand, there's a fair bit of work done in php to manage iCal records, interface with CalDAV servers.\"}
+{"type":"msg","timestamp":"09:53:00","sender":"Amgine","msg":"So... <waggles hand> I don't know. Could be a lot of work, but it may be more just re-purposing code, classes."}
+{"type":"msg","timestamp":"09:54:30","sender":"Amgine","msg":"Mind you, I understand there's a request to add Czech to LookUp... "}
+{"type":"msg","timestamp":"09:54:41","sender":"Amgine","msg":"(inference)"}
+{"type":"msg","timestamp":"09:54:43","sender":"bawolff","msg":"lol"}
+{"type":"msg","timestamp":"09:55:30","sender":"Amgine","msg":"It's possibly another waterfall project. This one would have more corporate possibilities."}
+[09:55:41] * bawolff  notes to channel in general, If i ever have an idea, lets do a hacky xslt script to inject hacky javascript into the api output, so it can create a hacky html page - just shoot me :P
+{"type":"msg","timestamp":"10:09:39","sender":"wikibugs","msg":"03(NEW) Annotation greek part-of-speech - 10https://bugzilla.wikimedia.org/33453 normal; MediaWiki extensions: OmegaWiki; (kaseluris.nikos)"}
+{"type":"msg","timestamp":"10:14:08","sender":"wikibugs","msg":"03(mod) Shared repositories support for Special:WantedFiles - 10https://bugzilla.wikimedia.org/6220  +comment (10bawolff+wn)"}
+{"type":"msg","timestamp":"10:23:10","sender":"wikibugs","msg":"03(mod) Global account not appearing on Special:GlobalUsers - 10https://bugzilla.wikimedia.org/30185  minor->major (10Quentinv57)"}
+{"type":"msg","timestamp":"10:24:24","sender":"wikibugs","msg":"03(mod) Global account not appearing on Special:GlobalUsers - 10https://bugzilla.wikimedia.org/30185  (10Quentinv57)"}
+{"type":"msg","timestamp":"10:29:40","sender":"wikibugs","msg":"03(mod) Global account not appearing on Special:GlobalUsers - 10https://bugzilla.wikimedia.org/30185  (10Bawolff)"}
+{"type":"msg","timestamp":"10:29:43","sender":"wikibugs","msg":"03(mod) Database table cleanup (tracking) - 10https://bugzilla.wikimedia.org/16660  (10Bawolff)"}
+{"type":"msg","timestamp":"11:11:47","sender":"codurr","msg":"New code comment: Nikerabbit; Did you intend to call defaultsOptions as defaultOptions (the version you had in one comment)?; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107011#c28739>"}
+{"type":"msg","timestamp":"11:52:13","sender":"wikibugs","msg":"03(NEW) Timestamp in timel should mark its timezone - 10https://bugzilla.wikimedia.org/33454 normal; MediaWiki extensions: ParserFunctions; (kwj2772)"}
+{"type":"msg","timestamp":"12:09:05","sender":"wikibugs","msg":"14(INVALID) SubPageList fails to show subpages in MediaWiki 1.18 - 10https://bugzilla.wikimedia.org/33403  +comment (10Jeroen De Dauw)"}
+{"type":"msg","timestamp":"12:17:39","sender":"wikibugs","msg":"03(NEW) Special:WantedFiles is limited to 1000 files total (not just per page) - 10https://bugzilla.wikimedia.org/33455 normal; MediaWiki: Images and files; (g.m.hagedorn)"}
+{"type":"msg","timestamp":"12:21:48","sender":"wikibugs","msg":"03(mod) Add a filter to Special:WantedFiles to remove the false positives - 10https://bugzilla.wikimedia.org/33446  +comment (10g.m.hagedorn)"}
+{"type":"msg","timestamp":"12:21:49","sender":"wikibugs","msg":"14(INVALID) Special:WantedFiles is limited to 1000 files total (not just per page) - 10https://bugzilla.wikimedia.org/33455  +comment (10Bawolff)"}
+{"type":"msg","timestamp":"12:23:32","sender":"codurr","msg":"03ialex * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107769> 10/trunk/phase3/includes/Title.php: Turn Title::isNewPage() into something useful by caching its result and preload it from Title::loadFromRow()"}
+{"type":"msg","timestamp":"12:28:31","sender":"wikibugs","msg":"03(mod) Special:WantedFiles is limited to 1000 files total (not just per page) - 10https://bugzilla.wikimedia.org/33455  +comment (10g.m.hagedorn)"}
+{"type":"msg","timestamp":"12:30:41","sender":"codurr","msg":"03bawolff * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107770> 10/trunk/phase3/ (5 files in 4 dirs):"}
+{"type":"msg","timestamp":"12:30:42","sender":"codurr","msg":"(bug 33447) Link to the broken image tracking category from Special:Wantedfiles"}
+{"type":"msg","timestamp":"12:30:42","sender":"codurr","msg":"Also add a note about how if you use a foreign repo, you're going to get plenty false positives."}
+{"type":"msg","timestamp":"12:31:09","sender":"wikibugs","msg":"03(FIXED) Add a link to the new missing-files tracking category on Special:WantedFiles - 10https://bugzilla.wikimedia.org/33447  +comment (10Bawolff)"}
+{"type":"msg","timestamp":"12:36:42","sender":"wikibugs","msg":"03(mod) Special:WantedFiles is limited to 1000 files total (not just per page) - 10https://bugzilla.wikimedia.org/33455  +comment (10bawolff+wn)"}
+{"type":"msg","timestamp":"12:44:44","sender":"codurr","msg":"03ialex * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107771> 10/trunk/phase3/includes/Title.php:"}
+{"type":"msg","timestamp":"12:44:44","sender":"codurr","msg":"Follow-up r107769:"}
+{"type":"msg","timestamp":"12:44:44","sender":"codurr","msg":"* do the same with getTouched(); removed its $db param since it's pretty useless now (and nothing is using it actually)"}
+{"type":"msg","timestamp":"12:44:44","sender":"codurr","msg":"* also set $mIsNew in loadFromRow() when there's no DB row (i.e. the page doesn't exist)"}
+{"type":"msg","timestamp":"12:44:44","sender":"codurr","msg":"Also forgot to say that I moved both functions near other related functions."}
+{"type":"msg","timestamp":"12:54:52","sender":"Danny_B|backup","msg":"which log actions are counted as revisions?"}
+{"type":"msg","timestamp":"13:00:14","sender":"wikibugs","msg":"03(mod) Special:WantedFiles is limited to 1000 files total (not just per page) - 10https://bugzilla.wikimedia.org/33455  +comment (10g.m.hagedorn)"}
+{"type":"msg","timestamp":"13:04:10","sender":"codurr","msg":"03raymond * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107772> 10/trunk/phase3/languages/messages/MessagesEn.php: r107770: Consistency tweak: Image -> File"}
+{"type":"msg","timestamp":"13:09:52","sender":"wikibugs","msg":"03(WONTFIX) Add a filter to Special:WantedFiles to remove the false positives - 10https://bugzilla.wikimedia.org/33446  +comment (10Gregor Hagedorn)"}
+{"type":"msg","timestamp":"13:27:09","sender":"wikibugs","msg":"03(NEW) Special Pages in MiserMode should report Manual:$wgQueryCacheLimit - 10https://bugzilla.wikimedia.org/33456 normal; MediaWiki: Special pages; (g.m.hagedorn)"}
+{"type":"msg","timestamp":"13:33:58","sender":"Cain","msg":"Happy New Year!"}
+{"type":"msg","timestamp":"13:36:51","sender":"dakaway2","msg":"You too."}
+{"type":"msg","timestamp":"14:02:01","sender":"codurr","msg":"03ialex * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107773> 10/trunk/phase3/ (3 files in 3 dirs):"}
+{"type":"msg","timestamp":"14:02:01","sender":"codurr","msg":"* (bug 32686) Tooltip on links to non-existing pages are now always in user's language"}
+{"type":"msg","timestamp":"14:02:01","sender":"codurr","msg":"Fixed this by "abusing" of the $options parameter of Linker::link() to pass the Language object (as we did for wfMsgExt()), has the two following advantages:"}
+{"type":"msg","timestamp":"14:02:01","sender":"codurr","msg":"* The tooltip is displayed in the requested language instead of depending on $wgLang"}
+{"type":"msg","timestamp":"14:02:01","sender":"codurr","msg":"* The usage of the Language object is detected in the ParserOptions, thus the parser cache key will not have "*" for the language"}
+{"type":"msg","timestamp":"14:02:25","sender":"wikibugs","msg":"03(FIXED) "Page does not exist" title cached in wrong language - 10https://bugzilla.wikimedia.org/32686  +comment (10Alexandre Emsenhuber [IAlex])"}
+{"type":"msg","timestamp":"14:16:13","sender":"codurr","msg":"03ialex * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107774> 10/trunk/phase3/includes/Article.php: Removed useless call to Title::getArticleID(); let WikiPage::doDeleteArticle() do this itself"}
+{"type":"msg","timestamp":"15:17:47","sender":"codurr","msg":"03oren * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107775> 10/trunk/lucene-search-2/src/org/wikimedia/lsearch/config/Configuration.java: improving testability under windows os"}
+{"type":"msg","timestamp":"15:25:21","sender":"wikibugs","msg":"03(mod) Inputs on special pages miss type="text" attribute - 10https://bugzilla.wikimedia.org/33274  +comment (10Aryeh Gregor)"}
+{"type":"msg","timestamp":"15:31:21","sender":"codurr","msg":"03ialex * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107776> 10/trunk/phase3/includes/specials/SpecialMovepage.php:"}
+{"type":"msg","timestamp":"15:31:21","sender":"codurr","msg":"* Display all errors in showForm() instead of only the first one"}
+{"type":"msg","timestamp":"15:31:21","sender":"codurr","msg":"* First do some checks and then delete the target page instead of the opposite so we don't delete a page for no purpose if a problem arises"}
+{"type":"msg","timestamp":"15:31:21","sender":"codurr","msg":"* Changed some empty() checks to count()"}
+{"type":"msg","timestamp":"15:31:21","sender":"codurr","msg":"* Use Title::quickUserCan() to see whether to show the checkbox to delete the page or not instead of User::isAllowed()"}
+{"type":"msg","timestamp":"15:35:00","sender":"Thehelpfulone","msg":"hi all"}
+{"type":"msg","timestamp":"15:35:14","sender":"Thehelpfulone","msg":"I'm trying to use Special:Translate and I've got the translationadmin flag"}
+{"type":"msg","timestamp":"15:35:32","sender":"Thehelpfulone","msg":"but when I've pressed the mark this page for translation button"}
+{"type":"msg","timestamp":"15:35:56","sender":"Thehelpfulone","msg":"and then am redirected to the special page where I press the grey Mark this version for translation button again"}
+{"type":"msg","timestamp":"15:35:57","sender":"wikibugs","msg":"03(mod) From field in notification email is confusing - 10https://bugzilla.wikimedia.org/32770  +comment (10maarten)"}
+{"type":"msg","timestamp":"15:36:08","sender":"Thehelpfulone","msg":"I'm hit with an error message, PHP fatal error in /usr/local/apache/common-local/php-1.18/extensions/Translate/tag/RenderJob.php line 53: "}
+{"type":"msg","timestamp":"15:36:10","sender":"Thehelpfulone","msg":"Call to a member function initCollection() on a non-object"}
+{"type":"msg","timestamp":"15:36:28","sender":"Thehelpfulone","msg":"and ideas what's up?"}
+{"type":"msg","timestamp":"15:36:30","sender":"Thehelpfulone","msg":"any*"}
+{"type":"msg","timestamp":"15:44:46","sender":"codurr","msg":"03ialex * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107777> 10/trunk/phase3/includes/SkinTemplate.php: Always set 'jsvarurl' to false (only affect skins not using OutputPage::headElement()) since action=raw&gen=js always return an empty page, so it's pointless to link to it"}
+{"type":"msg","timestamp":"15:48:08","sender":"wikibugs","msg":"03(mod) Inputs on special pages miss type="text" attribute - 10https://bugzilla.wikimedia.org/33274  +comment (10krinklemail)"}
+{"type":"msg","timestamp":"15:48:28","sender":"wikibugs","msg":"03(mod) Inputs on special pages miss type="text" attribute - 10https://bugzilla.wikimedia.org/33274  +comment (10krinklemail)"}
+{"type":"msg","timestamp":"15:49:21","sender":"wikibugs","msg":"03(mod) Inputs on special pages miss type="text" attribute - 10https://bugzilla.wikimedia.org/33274  +comment (10subfader)"}
+{"type":"msg","timestamp":"15:50:33","sender":"wikibugs","msg":"03(mod) Inputs on special pages miss type="text" attribute - 10https://bugzilla.wikimedia.org/33274  +comment (10subfader)"}
+{"type":"msg","timestamp":"15:50:50","sender":"wikibugs","msg":"03(mod) Inputs miss type="text" attribute - 10https://bugzilla.wikimedia.org/33274  summary (10Subfader)"}
+{"type":"msg","timestamp":"15:55:41","sender":"wikibugs","msg":"03(mod) Inputs miss type="text" attribute - 10https://bugzilla.wikimedia.org/33274  +comment (10krinklemail)"}
+{"type":"msg","timestamp":"16:00:02","sender":"wikibugs","msg":"03(mod) Ops - 10https://bugzilla.wikimedia.org/33457  (10wikichaipau)"}
+{"type":"msg","timestamp":"16:01:04","sender":"wikibugs","msg":"03(mod) Ops - 10https://bugzilla.wikimedia.org/33457  (10wikichaipau)"}
+{"type":"msg","timestamp":"16:13:36","sender":"wikibugs","msg":"03(NEW) Error when assigning global group permissions to an account with spaces - 10https://bugzilla.wikimedia.org/33458 normal; MediaWiki extensions: CentralAuth; (peter_symonds)"}
+{"type":"msg","timestamp":"16:17:00","sender":"wikibugs","msg":"03(mod) Error when assigning global group permissions to an account with spaces - 10https://bugzilla.wikimedia.org/33458  +comment (10peter_symonds)"}
+{"type":"msg","timestamp":"16:19:20","sender":"wikibugs","msg":"03(mod) Password recovery for Assamese wikipedia mailing list - 10https://bugzilla.wikimedia.org/33457  summary (10Shiju Alex)"}
+{"type":"msg","timestamp":"16:47:16","sender":"LL2|JedIRC","msg":"MediaWiki is basically completely open-source, from what I understand?"}
+{"type":"msg","timestamp":"16:47:54","sender":"LL2|JedIRC","msg":"Like, we can remove the "Powered by MediaWiki" logo at the bottom if we wanted?"}
+{"type":"msg","timestamp":"16:49:28","sender":"avar","msg":"yes you can"}
+{"type":"msg","timestamp":"16:50:40","sender":"LL2|JedIRC","msg":"K"}
+{"type":"msg","timestamp":"16:51:59","sender":"LL2|JedIRC","msg":"Well, when you're gonna give the whole code of the files, you can't keep em from editing the damned thing anyway"}
+{"type":"msg","timestamp":"16:52:33","sender":"LL2|JedIRC","msg":"Heck, even though windows is closed-source, they cannot keep users from editing the current code"}
+{"type":"msg","timestamp":"16:54:18","sender":"codurr","msg":"03krinkle * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107778> 10/trunk/phase3/resources/mediawiki/mediawiki.api.js:"}
+{"type":"msg","timestamp":"16:54:18","sender":"codurr","msg":"[mediawiki.api] Fix typo that was made consistently."}
+{"type":"msg","timestamp":"16:54:18","sender":"codurr","msg":"* Follows-up r107011"}
+{"type":"msg","timestamp":"16:55:03","sender":"codurr","msg":"New code comment: Krinkle; It was named that way everywhere so no breakage, but renamed in r107778. Thanks; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107011#c28740>"}
+{"type":"msg","timestamp":"17:07:59","sender":"wikibugs","msg":"03(mod) Black/striped thumbnails of CMYK JPEGs - 10https://bugzilla.wikimedia.org/24854  +comment (10gtisza)"}
+{"type":"msg","timestamp":"17:09:58","sender":"sparklesparkle","msg":"does anybody feel like giving some advice on using maintenance/changePassword.php?"}
+{"type":"msg","timestamp":"17:21:46","sender":"sparklesparkle","msg":"changePassword.php used to work but since i've changed the system to more of a "farm" layout specifying information like --conf and --wiki don't seem to work to specify which DB holds the --user for which to change the password... anything you've seen in the past that indicates why this isn't working?"}
+{"type":"msg","timestamp":"17:25:52","sender":"Krinkle","msg":"sparklesparkle: That depends on what method you used to create  a "farm""}
+{"type":"msg","timestamp":"17:26:04","sender":"Krinkle","msg":"sparklesparkle: I assume you have shared mediawiki source for all wikis ?"}
+{"type":"msg","timestamp":"17:26:44","sender":"sparklesparkle","msg":"krinkle: correct"}
+{"type":"msg","timestamp":"17:27:19","sender":"Krinkle","msg":"sparklesparkle: So in your LocalSettings.php (or in a file that is included from there) you probably have some kind of "switch"-like script that determines (based on the url?) which wiki it is ?"}
+{"type":"msg","timestamp":"17:27:23","sender":"Krinkle","msg":"and sets wgDBName etc. ?"}
+{"type":"msg","timestamp":"17:29:39","sender":"sparklesparkle","msg":"i have a source directory and a site-specific directory that contains configuration files and uploads for all wikis... each LocalSettings.php contains wgDBname, wgDBtype, wgDBserver, wgDBuser, wgDBpassword"}
+{"type":"msg","timestamp":"17:31:13","sender":"Tim_Weyer","msg":"For using maintenance scripts on a wiki family with the same installation, you need to set $_SERVER['SERVER_NAME']. See https://www.mediawiki.org/wiki/Manual:Wiki_family#Updating_wikifarm_from_the_commandline"}
+{"type":"msg","timestamp":"17:31:30","sender":"wikibugs","msg":"03(mod) Error when assigning global group permissions to an account with spaces - 10https://bugzilla.wikimedia.org/33458  +comment (10Nemo_bis)"}
+{"type":"msg","timestamp":"17:31:55","sender":"Krinkle","msg":"sparklesparkle: If you use that kind of setup you should override --conf,"}
+{"type":"msg","timestamp":"17:32:24","sender":"Krinkle","msg":"sparklesparkle: --wiki is meant for farms that use a single LocalSettings.php with a SiteConfiguration object that separates config per-wiki, which as a Wiki ID per wiki"}
+{"type":"msg","timestamp":"17:32:38","sender":"Krinkle","msg":"Wikimedia/Wikipedia uses the SiteConfiguration approach"}
+{"type":"msg","timestamp":"17:36:12","sender":"justin__","msg":"Hello. Is it possible to take the search bar from en.wikipedia.org and put it on my website (with the same autosuggests)?"}
+{"type":"msg","timestamp":"17:36:14","sender":"Krinkle","msg":"SiteConfiguration approach will also make your config a lot cleaner, but that probably requires you to start over since you already have a setup that is very different"}
+{"type":"msg","timestamp":"17:36:32","sender":"Krinkle","msg":"justin__: What version of MediaWiki do you have ?"}
+{"type":"msg","timestamp":"17:36:56","sender":"Krinkle","msg":"justin__: Everything you see on Wikipedia in terms of software is also open-source and in svn as an extension, so yes you can everything it has."}
+{"type":"msg","timestamp":"17:37:01","sender":"justin__","msg":"I'm running a Node.JS server, no MediaWiki. I simply want the "autosuggest" feature."}
+{"type":"msg","timestamp":"17:37:05","sender":"Tim_Weyer","msg":"justin__: You need to install and setup lucence-search"}
+{"type":"msg","timestamp":"17:37:20","sender":"Krinkle","msg":"justin__: google "jquery ui autocomplete""}
+{"type":"msg","timestamp":"17:37:51","sender":"Krinkle","msg":"justin__: Not related to lucene-search or mediawiki"}
+{"type":"msg","timestamp":"17:37:51","sender":"justin__","msg":"Krinkle: I know about the jquery ui autocomplete feature. I want access the to *data* to feed it. (Wikipedia article names.)"}
+{"type":"msg","timestamp":"17:38:05","sender":"Krinkle","msg":"?"}
+{"type":"msg","timestamp":"17:38:33","sender":"Tim_Weyer","msg":"why? Wikipedia is there, that's enough"}
+{"type":"msg","timestamp":"17:38:45","sender":"Krinkle","msg":"justin__: Do you have Firebug or something ?"}
+{"type":"msg","timestamp":"17:38:57","sender":"Krinkle","msg":"Look at the XHR requests it makes when you type"}
+{"type":"msg","timestamp":"17:39:34","sender":"Krinkle","msg":"https://www.mediawiki.org/w/api.php?action=opensearch&search=Einstein&namespace=0&suggest=1"}
+{"type":"msg","timestamp":"17:39:54","sender":"justin__","msg":"Tim_Weyer: :) I have a project that is based on the Wikipedia article names"}
+{"type":"msg","timestamp":"17:40:06","sender":"justin__","msg":"Krinkle: Thanks. Yes, I have Google Chrome tools"}
+{"type":"msg","timestamp":"17:41:02","sender":"Krinkle","msg":"justin__: https://www.mediawiki.org/w/api.php?action=help&modules=opensearch"}
+{"type":"msg","timestamp":"17:41:15","sender":"Krinkle","msg":"https://www.mediawiki.org/wiki/API:Formats"}
+{"type":"msg","timestamp":"17:41:27","sender":"Krinkle","msg":"https://www.mediawiki.org/wiki/API:Opensearch"}
+{"type":"msg","timestamp":"17:41:36","sender":"Krinkle","msg":"That should be enough :)"}
+{"type":"msg","timestamp":"17:41:47","sender":"Krinkle","msg":"you probably want format=json and perhaps use callback= if you want"}
+{"type":"msg","timestamp":"17:41:55","sender":"justin__","msg":"Krinkle: Thanks a bunch. That's exactly what I wanted :)"}
+{"type":"msg","timestamp":"17:42:04","sender":"Krinkle","msg":"you're welcome"}
+{"type":"msg","timestamp":"17:42:23","sender":"Krinkle","msg":"namespace=0 is the article namespace"}
+{"type":"msg","timestamp":"17:42:30","sender":"Tim_Weyer","msg":"justin__: Like Krinkle said, API is the point you need. The other part is not so complicated"}
+{"type":"msg","timestamp":"17:42:33","sender":"Krinkle","msg":"(there is also namespaces for user profiles, discussion pages etc.)"}
+{"type":"msg","timestamp":"17:42:57","sender":"Krinkle","msg":"k, bbl"}
+{"type":"msg","timestamp":"17:44:29","sender":"sparklesparkle","msg":"kringle: just so we're clear, you suggest omitting the --wiki argument and that's it? or do you think i should do something defferent with --conf too?"}
+{"type":"msg","timestamp":"17:44:54","sender":"sparklesparkle","msg":"oops, krinkle"}
+{"type":"msg","timestamp":"18:05:59","sender":"Matrixiumn","msg":"bye"}
+{"type":"msg","timestamp":"18:08:36","sender":"Krinkle-away","msg":"sparklesparkle: 1: yes, 2: no"}
+{"type":"msg","timestamp":"18:09:00","sender":"Krinkle-away","msg":"but that's just from reading the code and documentation, I haven't operated a wiki-farm myself that close"}
+{"type":"msg","timestamp":"18:09:08","sender":"Krinkle-away","msg":"Reedy might know"}
+{"type":"msg","timestamp":"18:09:12","sender":"Krinkle-away","msg":"but try first"}
+{"type":"msg","timestamp":"18:10:12","sender":"sparklesparkle","msg":"thanks krinkle-away, will try"}
+{"type":"msg","timestamp":"18:19:52","sender":"jeremyb","msg":"petan: re grouping..."}
+{"type":"msg","timestamp":"18:19:58","sender":"petan","msg":"hi"}
+{"type":"msg","timestamp":"18:20:27","sender":"Betacommand","msg":"who do I need to poke to get r107623 live?"}
+{"type":"msg","timestamp":"18:20:30","sender":"jeremyb","msg":"petan: can't you just do that with a JS gadget (maybe on by default) to make some kind of structured edit to the user's page?"}
+{"type":"msg","timestamp":"18:20:45","sender":"petan","msg":"jeremyb: no idea what you mean..."}
+{"type":"msg","timestamp":"18:20:51","sender":"petan","msg":"!r107623"}
+{"type":"msg","timestamp":"18:20:51","sender":"mw-bot","msg":"I don't know anything about "r107623"."}
+{"type":"msg","timestamp":"18:20:56","sender":"jeremyb","msg":"petan: the email you just sent <10 mins ago"}
+{"type":"msg","timestamp":"18:20:56","sender":"petan","msg":"!r 107623"}
+{"type":"msg","timestamp":"18:20:57","sender":"mw-bot","msg":"https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107623"}
+{"type":"msg","timestamp":"18:21:06","sender":"petan","msg":"jeremyb: I know, but I mean the JS stuff"}
+{"type":"msg","timestamp":"18:21:20","sender":"petan","msg":"structured edit to user's page?"}
+{"type":"msg","timestamp":"18:21:56","sender":"jeremyb","msg":"petan: i mean it doesn't have to be php. you could make an edit to the user's user page which in turn is queryable from the db."}
+{"type":"msg","timestamp":"18:21:58","sender":"wikibugs","msg":"03(NEW) Feature request: Maintenance script for user rename - 10https://bugzilla.wikimedia.org/33459 normal; MediaWiki extensions: Renameuser; (jille)"}
+{"type":"msg","timestamp":"18:22:14","sender":"jeremyb","msg":"petan: similar to how infoboxes are used"}
+{"type":"msg","timestamp":"18:22:30","sender":"petan","msg":"so you mean that a list of user accounts would be present on user page?"}
+{"type":"msg","timestamp":"18:22:42","sender":"petan","msg":"enforced for all users?"}
+{"type":"msg","timestamp":"18:23:02","sender":"petan","msg":"my idea was to make a new special page where you could list all user accounts"}
+{"type":"msg","timestamp":"18:23:14","sender":"petan","msg":"belonging to some certain person"}
+{"type":"msg","timestamp":"18:23:21","sender":"jeremyb","msg":"well, it could just go in existing preferences"}
+{"type":"msg","timestamp":"18:23:34","sender":"petan","msg":"so that when someone create alt account, it would be easy to look it up"}
+{"type":"msg","timestamp":"18:23:38","sender":"jeremyb","msg":"anyway, you'd need to find some way to mark accts as less trusted"}
+{"type":"msg","timestamp":"18:23:50","sender":"wikibugs","msg":"03(mod) Feature request: Maintenance script for user rename - 10https://bugzilla.wikimedia.org/33459  +comment (10jille)"}
+{"type":"msg","timestamp":"18:23:56","sender":"jeremyb","msg":"e.g. some are accts that people only use on public (untrusted) kiosks"}
+{"type":"msg","timestamp":"18:24:00","sender":"petan","msg":"Betacommand: clarify"}
+{"type":"msg","timestamp":"18:24:03","sender":"petan","msg":"going live"}
+{"type":"msg","timestamp":"18:24:10","sender":"petan","msg":"* get live"}
+{"type":"msg","timestamp":"18:24:11","sender":"petan","msg":"whatever"}
+{"type":"msg","timestamp":"18:24:37","sender":"Betacommand","msg":"petan: pushed into production on WMF wikis"}
+{"type":"msg","timestamp":"18:25:04","sender":"petan","msg":"jeremyb: for instance I have more than 6 accounts, most of people I know do have more than 1 account and I think it's ok"}
+{"type":"msg","timestamp":"18:25:04","sender":"jeremyb","msg":"Betacommand: i think it won't happen today?"}
+{"type":"msg","timestamp":"18:25:31","sender":"Betacommand","msg":"jeremyb: I know that, but I was just wondering who I needed to poke later"}
+{"type":"msg","timestamp":"18:25:34","sender":"petan","msg":"jeremyb: problem is that when you open statisctics you will definitely not see a number which tell you how many users we have"}
+{"type":"msg","timestamp":"18:25:45","sender":"petan","msg":"you would only see a number which tell you how many accounts we have"}
+{"type":"msg","timestamp":"18:25:51","sender":"jeremyb","msg":"Betacommand: try hexmode ?"}
+{"type":"msg","timestamp":"18:26:04","sender":"Betacommand","msg":"jeremyb: thanks"}
+{"type":"msg","timestamp":"18:27:17","sender":"jeremyb","msg":"petan: it could be calculated. anyway i assume <15% of users have active alternate accts. (people might have inactive accts because they forgot their username or never set an email so they couldn't resetpass so they just made a new one)"}
+{"type":"msg","timestamp":"18:27:53","sender":"jeremyb","msg":"brb"}
+{"type":"msg","timestamp":"18:28:06","sender":"petan","msg":"it would be never accurate and still I think the grouping would be useful"}
+{"type":"msg","timestamp":"18:28:22","sender":"petan","msg":"but it's a subject of long discussion :)"}
+{"type":"msg","timestamp":"18:31:42","sender":"wikibugs","msg":"03(mod) Create maintenance script for renameuser - 10https://bugzilla.wikimedia.org/33459  normal->15enhancement; summary (10Reedy)"}
+{"type":"msg","timestamp":"18:36:17","sender":"codurr","msg":"03reedy * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107779> 10/trunk/extensions/Renameuser/renameUserCleanup.php:"}
+{"type":"msg","timestamp":"18:36:17","sender":"codurr","msg":"Fix undefined $dbw"}
+{"type":"msg","timestamp":"18:36:18","sender":"codurr","msg":"Documentation!"}
+{"type":"msg","timestamp":"18:54:14","sender":"johnduhart_","msg":"Betacommand petan hexmode does bugs, you should talk to someone like Reedy or Roan"}
+{"type":"msg","timestamp":"18:55:09","sender":"youri","msg":"i have an issue with the search box"}
+{"type":"msg","timestamp":"18:55:15","sender":"youri","msg":"in vector theme"}
+{"type":"msg","timestamp":"18:55:20","sender":"johnduhart_","msg":"The revision still needs to be reviewed and merged into the production branch before it can be deployed though."}
+{"type":"msg","timestamp":"18:55:56","sender":"youri","msg":"can anyione help ?"}
+{"type":"msg","timestamp":"18:56:19","sender":"johnduhart_","msg":"!ask youri "}
+{"type":"msg","timestamp":"18:56:20","sender":"mw-bot","msg":"Hi, how can we help you? Just ask your question."}
+{"type":"msg","timestamp":"18:58:18","sender":"youri","msg":"i put position=absolute for p-search in the css and then the position wanted and it works when logged in when when i log out the search box change position, it goes "}
+{"type":"msg","timestamp":"18:58:50","sender":"youri","msg":"more on the right"}
+{"type":"msg","timestamp":"19:04:11","sender":"youri","msg":"any idea ?"}
+{"type":"msg","timestamp":"19:10:25","sender":"youri","msg":"?"}
+{"type":"msg","timestamp":"19:11:24","sender":"petan","msg":"johnduhart_: hi"}
+{"type":"msg","timestamp":"19:11:25","sender":"PiRSquared17","msg":"What is the regular expression (if there is one) for page titles?"}
+{"type":"msg","timestamp":"19:11:41","sender":"PiRSquared17","msg":"What characters are allowed?"}
+{"type":"msg","timestamp":"19:11:54","sender":"orashmatash","msg":"#'s aren't."}
+{"type":"msg","timestamp":"19:12:00","sender":"johnduhart_","msg":"PiRSquared17: Check Title.php"}
+{"type":"msg","timestamp":"19:12:59","sender":"orashmatash","msg":"And where would you find that?"}
+{"type":"msg","timestamp":"19:13:06","sender":"PiRSquared17","msg":"lol"}
+{"type":"msg","timestamp":"19:13:13","sender":"johnduhart_","msg":"PiRSquared17: $wgLegalTitleChars = " %!\"$&'()*,\\-.\\/0-9:;=?@A-Z\\\\^_`a-z~\\x80-\\xFF+";"}
+{"type":"msg","timestamp":"19:13:59","sender":"PiRSquared17","msg":"What about Unicode characters like those in Chinese?"}
+{"type":"msg","timestamp":"19:14:12","sender":"orashmatash","msg":"Why on Earth is "~" a legal character, but "#" is not?"}
+{"type":"msg","timestamp":"19:14:20","sender":"johnduhart_","msg":"PiRSquared17: '\\x80-\\xFF'"}
+{"type":"msg","timestamp":"19:15:07","sender":"johnduhart_","msg":"orashmatash: Because pound is a fragment identifier in a URL"}
+{"type":"msg","timestamp":"19:15:09","sender":"PiRSquared17","msg":"ah ok"}
+{"type":"msg","timestamp":"19:15:22","sender":"orashmatash","msg":"Oh."}
+{"type":"msg","timestamp":"19:15:25","sender":"johnduhart_","msg":"orashmatash: eg. http://en.wikipedia.org/wiki/Saddam_Hussein#Personality_cult"}
+[19:16:01] * johnduhart_  waves to Reedy 
+{"type":"msg","timestamp":"19:16:42","sender":"Reedy","msg":"hai"}
+{"type":"msg","timestamp":"19:17:06","sender":"johnduhart_","msg":"Reedy: Did you hear about not to craft any more coal?"}
+{"type":"msg","timestamp":"19:17:20","sender":"Reedy","msg":"No...?"}
+{"type":"msg","timestamp":"19:17:36","sender":"PiRSquared17","msg":"Is there some way to detect cases like:"}
+{"type":"msg","timestamp":"19:17:44","sender":"PiRSquared17","msg":"https://en.wikipedia.org/w/index.php?title=[[]]&action=raw&ctype=text"}
+{"type":"msg","timestamp":"19:17:47","sender":"johnduhart_","msg":"Don't craft anymore coal, they're all out of third party games. Only thing left is valve stuff"}
+{"type":"msg","timestamp":"19:17:56","sender":"Reedy","msg":"Haha, seriously?"}
+{"type":"msg","timestamp":"19:18:00","sender":"Reedy","msg":"I got another 25% off valve voucher"}
+{"type":"msg","timestamp":"19:18:21","sender":"johnduhart_","msg":"Yeah, they even have a notice on the page"}
+{"type":"msg","timestamp":"19:18:33","sender":"johnduhart_","msg":"http://store.steampowered.com/holidaysale/"}
+{"type":"msg","timestamp":"19:18:36","sender":"johnduhart_","msg":"on the right"}
+{"type":"msg","timestamp":"19:18:45","sender":"johnduhart_","msg":"PiRSquared17: What do you mean?"}
+{"type":"msg","timestamp":"19:18:54","sender":"johnduhart_","msg":"If it doesn't match that regex it's no good"}
+{"type":"msg","timestamp":"19:19:10","sender":"PiRSquared17","msg":"Like, is the MIME type different or is there an HTTP(S) error?"}
+{"type":"msg","timestamp":"19:19:50","sender":"johnduhart_","msg":"No"}
+{"type":"msg","timestamp":"19:20:04","sender":"johnduhart_","msg":"You might get some info about it from the API though..."}
+{"type":"msg","timestamp":"19:20:21","sender":"PiRSquared17","msg":"But this is index.php with action=raw ..."}
+{"type":"msg","timestamp":"19:20:27","sender":"johnduhart_","msg":"What exactly are you trying to accomplish?"}
+{"type":"msg","timestamp":"19:21:58","sender":"PiRSquared17","msg":"Get the raw content of some page"}
+{"type":"msg","timestamp":"19:22:26","sender":"PiRSquared17","msg":"But it will give some HTML (source of https://en.wikipedia.org/w/index.php?title=[[]]&action=raw&ctype=text ) when the title is invalid"}
+{"type":"msg","timestamp":"19:24:29","sender":"johnduhart_","msg":"You can do that through the API"}
+{"type":"msg","timestamp":"19:24:57","sender":"PiRSquared17","msg":"How?"}
+{"type":"msg","timestamp":"19:25:43","sender":"OverlordQ","msg":"Reedy: evidently people were mass making steam accounts to get the 4-5 free achievements"}
+{"type":"msg","timestamp":"19:26:00","sender":"johnduhart_","msg":"PiRSquared17: http://en.wikipedia.org/w/api.php?action=query&prop=revisions&titles=Test&rvprop=Ccontent"}
+{"type":"msg","timestamp":"19:26:00","sender":"Reedy","msg":"OverlordQ, seriously?"}
+{"type":"msg","timestamp":"19:26:06","sender":"johnduhart_","msg":"Reedy: Yeah"}
+{"type":"msg","timestamp":"19:26:20","sender":"Reedy","msg":"Out of all the stuff I've got, there's almost nothing I actually need/wanted"}
+{"type":"msg","timestamp":"19:26:29","sender":"johnduhart_","msg":"PiRSquared17: APi Docs https://www.mediawiki.org/wiki/API:Main_page"}
+{"type":"msg","timestamp":"19:26:35","sender":"PiRSquared17","msg":"But that is an (X)HTML page which looks like an XML document..."}
+{"type":"msg","timestamp":"19:26:52","sender":"johnduhart_","msg":"PiRSquared17: Read the documentation for the API"}
+{"type":"msg","timestamp":"19:27:55","sender":"johnduhart_","msg":"PiRSquared17: Sorry, the URL for the query should of been http://en.wikipedia.org/w/api.php?action=query&prop=revisions&titles=Test&rvprop=content"}
+{"type":"msg","timestamp":"19:31:36","sender":"PiRSquared17","msg":"But then there are &lt;s..."}
+{"type":"msg","timestamp":"19:32:10","sender":"PiRSquared17","msg":"(I know that gt and lt are used in xml/sgml/etc)"}
+{"type":"msg","timestamp":"19:35:28","sender":"johnduhart_","msg":"PiRSquared17: Huh?"}
+{"type":"msg","timestamp":"19:35:29","sender":"Reedy","msg":"It's cause it's being pretty printed for html"}
+{"type":"msg","timestamp":"19:35:32","sender":"Reedy","msg":"&format=xml"}
+{"type":"msg","timestamp":"19:38:43","sender":"johnduhart_","msg":"So when are we going to deprecate action=raw for the API?"}
+{"type":"msg","timestamp":"19:39:05","sender":"johnduhart_","msg":"and action=render"}
+{"type":"msg","timestamp":"19:40:04","sender":"Reedy","msg":"god knows"}
+{"type":"msg","timestamp":"19:41:40","sender":"Joan","msg":"I wonder how many people don't specify &format in their programs."}
+{"type":"msg","timestamp":"19:42:48","sender":"Reedy","msg":"Fecck"}
+{"type":"msg","timestamp":"19:42:51","sender":"Alphos","msg":"Joan probably not too many, it'd be quite difficult to parse xmlfm to something useful :/"}
+{"type":"msg","timestamp":"19:42:53","sender":"Reedy","msg":"I don't think I want to know"}
+{"type":"msg","timestamp":"19:44:04","sender":"petan","msg":"what are we using instead of action=raw"}
+{"type":"msg","timestamp":"19:44:08","sender":"Joan","msg":"Alphos: I bet it's disturbingly common."}
+{"type":"msg","timestamp":"19:44:25","sender":"Alphos","msg":"maybe during tests, i doubt it othewise :/"}
+{"type":"msg","timestamp":"19:44:49","sender":"Alphos","msg":"*otherwise"}
+{"type":"msg","timestamp":"19:45:47","sender":"johnduhart_","msg":"petan: The great and holy API"}
+{"type":"msg","timestamp":"19:46:00","sender":"petan","msg":"ah"}
+{"type":"msg","timestamp":"19:46:07","sender":"petan","msg":"I thought it was some api command :D"}
+{"type":"msg","timestamp":"19:46:22","sender":"johnduhart_","msg":"Nope it's a index.php parameter :)"}
+{"type":"msg","timestamp":"19:46:52","sender":"petan","msg":"johnduhart_: maybe once tools like huggle stop using that, we could "deprecate" it in a fashion that it would be flagged deprecated but still would work"}
+{"type":"msg","timestamp":"19:47:22","sender":"petan","msg":"I don't like idea of removing old parameters just because we have better now it break compatibility"}
+{"type":"msg","timestamp":"19:47:34","sender":"johnduhart_","msg":"The thing is, if it still works, people will still use it"}
+{"type":"msg","timestamp":"19:48:00","sender":"petan","msg":"maybe a big label "THIS IS DEPRECATED, DUDE" would do"}
+{"type":"msg","timestamp":"19:48:13","sender":"johnduhart_","msg":"I mean I won't go and remove it or 1.20, but I think we might want to think about depcreating it and then in the future removing it"}
+{"type":"msg","timestamp":"19:48:35","sender":"Reedy","msg":"redirect it"}
+{"type":"msg","timestamp":"19:48:43","sender":"Reedy","msg":"depends whether we've got a load of parameters to rename etc"}
+{"type":"msg","timestamp":"19:48:44","sender":"petan","msg":"sounds good"}
+{"type":"msg","timestamp":"19:49:12","sender":"johnduhart_","msg":"Reedy: But what would the output format be?"}
+{"type":"msg","timestamp":"19:49:14","sender":"petan","msg":"there are people who are using obsolete tools on wikipedia so that deprecating such things would break them"}
+{"type":"msg","timestamp":"19:49:14","sender":"Reedy","msg":"I did something like that when I pulled Special:Contributions?feed=atom out to an api module"}
+{"type":"msg","timestamp":"19:49:27","sender":"petan","msg":"johnduhart_: raw"}
+{"type":"msg","timestamp":"19:49:44","sender":"petan","msg":"it should display raw text as previous one did"}
+{"type":"msg","timestamp":"19:49:56","sender":"petan","msg":"so it's 100% compatible"}
+[19:50:17] * johnduhart_  shakes head
+{"type":"msg","timestamp":"19:51:13","sender":"johnduhart_","msg":"The point was we can't redirect it to the API because the API expects an output format, and you can't output raw from the API"}
+{"type":"msg","timestamp":"19:51:27","sender":"petan","msg":"it can't now"}
+{"type":"msg","timestamp":"19:51:31","sender":"johnduhart_","msg":"No"}
+{"type":"msg","timestamp":"19:51:33","sender":"petan","msg":"maybe it could be an option for api"}
+{"type":"msg","timestamp":"19:51:37","sender":"johnduhart_","msg":"No we are not going to do that"}
+{"type":"msg","timestamp":"19:51:38","sender":"petan","msg":"in future"}
+{"type":"msg","timestamp":"19:51:40","sender":"johnduhart_","msg":"no"}
+{"type":"msg","timestamp":"19:51:41","sender":"johnduhart_","msg":"nonono"}
+{"type":"msg","timestamp":"19:51:44","sender":"petan","msg":":o"}
+{"type":"msg","timestamp":"19:51:47","sender":"Reedy","msg":"Fuck it"}
+{"type":"msg","timestamp":"19:51:50","sender":"Reedy","msg":"just break back compat"}
+{"type":"msg","timestamp":"19:51:53","sender":"Reedy","msg":"THE API CAME IN YEARS AGO"}
+{"type":"msg","timestamp":"19:51:54","sender":"Reedy","msg":"Srsly."}
+{"type":"msg","timestamp":"19:52:01","sender":"petan","msg":"yay"}
+{"type":"msg","timestamp":"19:52:07","sender":"petan","msg":"maybe we could discuss it on wikitech"}
+{"type":"msg","timestamp":"19:52:09","sender":"johnduhart_","msg":"Reedy: think of all the pissed off enwiki people"}
+{"type":"msg","timestamp":"19:52:11","sender":"petan","msg":"before deprecating it"}
+{"type":"msg","timestamp":"19:52:19","sender":"Reedy","msg":"johnduhart_, all the more reason"}
+{"type":"msg","timestamp":"19:52:24","sender":"johnduhart_","msg":"hehe"}
+{"type":"msg","timestamp":"19:52:26","sender":"petan","msg":":D"}
+{"type":"msg","timestamp":"19:52:45","sender":"petan","msg":"in that case, deprecate it before telling people"}
+{"type":"msg","timestamp":"19:54:00","sender":"youri","msg":"anyone can help with css ?"}
+{"type":"msg","timestamp":"19:54:12","sender":"Reedy","msg":"bit more desk re-arrangement then BF3 or Star Wars Force Unleashed II"}
+{"type":"msg","timestamp":"19:54:24","sender":"Reedy","msg":"youri, probably, but that's a very vague question"}
+{"type":"msg","timestamp":"19:54:32","sender":"youri","msg":":D yeah sorry"}
+{"type":"msg","timestamp":"19:54:44","sender":"youri","msg":"i have a problem with the search box in vectire theme"}
+{"type":"msg","timestamp":"19:54:56","sender":"youri","msg":"vector*"}
+{"type":"msg","timestamp":"19:55:05","sender":"PiRSquared17","msg":"umm"}
+{"type":"msg","timestamp":"19:55:19","sender":"youri","msg":"i put absolute as position for p-search"}
+{"type":"msg","timestamp":"19:55:26","sender":"youri","msg":"with the wanted position"}
+{"type":"msg","timestamp":"19:55:29","sender":"PiRSquared17","msg":"Does it just escape < and > or does it escape more characters?"}
+{"type":"msg","timestamp":"19:55:33","sender":"youri","msg":"works fine when logged in wiki"}
+{"type":"msg","timestamp":"19:55:52","sender":"youri","msg":"but when logged out the box move"}
+{"type":"msg","timestamp":"19:55:53","sender":"youri","msg":"s"}
+{"type":"msg","timestamp":"19:56:42","sender":"youri","msg":"weird"}
+{"type":"msg","timestamp":"19:56:58","sender":"PiRSquared17","msg":"?"}
+{"type":"msg","timestamp":"19:57:13","sender":"youri","msg":"is the question for me ?"}
+{"type":"msg","timestamp":"20:00:28","sender":"johnduhart_","msg":"PiRSquared17: You"}
+{"type":"msg","timestamp":"20:00:35","sender":"johnduhart_","msg":"PiRSquared17: You're not reading the documentation"}
+{"type":"msg","timestamp":"20:00:56","sender":"johnduhart_","msg":"https://www.mediawiki.org/wiki/API:Data_formats"}
+{"type":"msg","timestamp":"20:01:11","sender":"johnduhart_","msg":"Then you need to process the output from the API"}
+{"type":"msg","timestamp":"20:05:48","sender":"codurr","msg":"New code comment: Nikerabbit; Do we actually want to fragment the parser cache for this?; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107773#c28741>"}
+{"type":"msg","timestamp":"20:10:34","sender":"Nikerabbit","msg":"uga uga"}
+{"type":"msg","timestamp":"20:11:18","sender":"codurr","msg":"New code comment: Raymond; Some of these revision: \ In Translatewiki: \ PHP Notice: Undefined index: bitrateunits in /www/w/ext; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107744#c28742>"}
+{"type":"msg","timestamp":"20:15:47","sender":"Joan","msg":"Does everyone see the "Select font" thing?"}
+{"type":"msg","timestamp":"20:16:21","sender":"codurr","msg":"03reedy * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107780> 10/trunk/phase3/maintenance/language/messages.inc: Fix fixme on r107744 (though, I'm guessing r107743 is at fault, for not adding a blockcomment variable after adding it higher up in messages.inc"}
+{"type":"msg","timestamp":"20:16:31","sender":"Reedy","msg":"AFAIK yeah"}
+{"type":"msg","timestamp":"20:16:42","sender":"Joan","msg":"Err, why?"}
+{"type":"msg","timestamp":"20:19:50","sender":"Nikerabbit","msg":"Joan: where?"}
+{"type":"msg","timestamp":"20:19:51","sender":"Raymond_afk","msg":"Reedy: thanks. that was too easy "}
+{"type":"msg","timestamp":"20:19:58","sender":"Joan","msg":"Nikerabbit: mediawiki.org."}
+{"type":"msg","timestamp":"20:20:05","sender":"Joan","msg":"I think I saw it somewhere else recently too."}
+{"type":"msg","timestamp":"20:20:08","sender":"Raymond_afk","msg":"Reedy: I have not looked into this file :("}
+{"type":"msg","timestamp":"20:20:08","sender":"Joan","msg":"test.wikipedia.org, maybe?"}
+{"type":"msg","timestamp":"20:20:17","sender":"Joan","msg":"Is it from the Translate extension?"}
+{"type":"msg","timestamp":"20:20:38","sender":"Reedy","msg":"Heh, Raymond_afk I had copied by example from sizeunits.... So I just searched the whole of phase3 for siteunits, and found a place i hadn't added bitrate units :)"}
+{"type":"msg","timestamp":"20:20:39","sender":"Joan","msg":"It just gives a menu with "Reset" and "Help"."}
+{"type":"msg","timestamp":"20:20:42","sender":"Joan","msg":"I don't really get it."}
+{"type":"msg","timestamp":"20:20:47","sender":"Nikerabbit","msg":"it's from WebFonts"}
+{"type":"msg","timestamp":"20:20:56","sender":"Nikerabbit","msg":"I only see it on mediawiki.org mainpage"}
+{"type":"msg","timestamp":"20:21:27","sender":"Nikerabbit","msg":"ah, probably because of those language names"}
+{"type":"msg","timestamp":"20:21:29","sender":"Reedy","msg":"Anything in NS 0"}
+{"type":"msg","timestamp":"20:21:53","sender":"Nikerabbit","msg":"no that's not true"}
+{"type":"msg","timestamp":"20:22:46","sender":"Nikerabbit","msg":"and fyi it's the webfonts extension"}
+{"type":"msg","timestamp":"20:23:05","sender":"Reedy","msg":"you said that 6 lines ago ;)"}
+{"type":"msg","timestamp":"20:23:48","sender":"Nikerabbit","msg":"just making sure"}
+{"type":"msg","timestamp":"20:25:58","sender":"johnduhart_","msg":"Nikerabbit: Just wondering, if the only option is 'reset' why display the menu at all?"}
+{"type":"msg","timestamp":"20:26:48","sender":"Joan","msg":"Right."}
+{"type":"msg","timestamp":"20:26:51","sender":"Joan","msg":"That seems to be the bug."}
+{"type":"msg","timestamp":"20:27:03","sender":"Joan","msg":"Which I was working on filing before getting horribly distracted."}
+{"type":"msg","timestamp":"20:27:04","sender":"johnduhart_","msg":"Joan: Not a bug if it's intended ;)"}
+{"type":"msg","timestamp":"20:27:09","sender":"johnduhart_","msg":"AHHHHH, Special:MyLanguage isn't protocol relative"}
+{"type":"msg","timestamp":"20:27:48","sender":"Reedy","msg":"Wow"}
+{"type":"msg","timestamp":"20:27:55","sender":"Reedy","msg":"Protocol relative summoned Roan"}
+{"type":"msg","timestamp":"20:27:58","sender":"Reedy","msg":"That's good going"}
+{"type":"msg","timestamp":"20:27:59","sender":"johnduhart_","msg":"haha"}
+{"type":"msg","timestamp":"20:28:03","sender":"codurr","msg":"New code comment: IAlex; If there's something else depending on requested language (like a TOC or <code><nowiki>{{int:}}</now; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107773#c28743>"}
+{"type":"msg","timestamp":"20:28:16","sender":"Joan","msg":"johnduhart_: I don't see why it would ever be intended."}
+{"type":"msg","timestamp":"20:28:33","sender":"Joan","msg":"You don't offer people the option of selecting a font and then not offer them any fonts. That's not nice."}
+{"type":"msg","timestamp":"20:28:42","sender":"RoanKattouw","msg":"lol"}
+{"type":"msg","timestamp":"20:28:46","sender":"RoanKattouw","msg":"I come onto IRC for the first time in more than a week"}
+{"type":"msg","timestamp":"20:28:49","sender":"RoanKattouw","msg":"and of course I get grabbed immediately"}
+{"type":"msg","timestamp":"20:28:52","sender":"johnduhart_","msg":"Joan: Which is why I asked Nikerabbit if there was a reason for that"}
+{"type":"msg","timestamp":"20:29:03","sender":"johnduhart_","msg":"RoanKattouw: Nah, you don't need to fix anything we can handle it ;)"}
+{"type":"msg","timestamp":"20:29:12","sender":"RoanKattouw","msg":"yay"}
+{"type":"msg","timestamp":"20:29:19","sender":"johnduhart_","msg":"Is Special:MyLangauge in trunk?"}
+{"type":"msg","timestamp":"20:29:23","sender":"codurr","msg":"03raymond * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107781> 10/trunk/ (176 files in 123 dirs): Localisation updates for core and extension messages from translatewiki.net"}
+{"type":"msg","timestamp":"20:29:30","sender":"johnduhart_","msg":"phase3*"}
+{"type":"msg","timestamp":"20:29:45","sender":"Reedy","msg":"should be"}
+{"type":"msg","timestamp":"20:29:46","sender":"Reedy","msg":"I htink"}
+{"type":"msg","timestamp":"20:29:59","sender":"Joan","msg":"I don't see a bug for the useless menu."}
+{"type":"msg","timestamp":"20:30:02","sender":"Reedy","msg":"You can really tell when there's a translation rally going on"}
+{"type":"msg","timestamp":"20:31:33","sender":"Joan","msg":"Is using "useless" in a bug summary going to cause offense?"}
+{"type":"msg","timestamp":"20:31:47","sender":"Reedy","msg":"No, it has no use in this case"}
+{"type":"msg","timestamp":"20:31:54","sender":"codurr","msg":"03raymond * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107782> 10/trunk/tools/ToolserverI18N/language/messages/ (Monumentsapi.i18n.php Wlm.i18n.php): Localisation updates for ToolserverI18N from translatewiki.net"}
+{"type":"msg","timestamp":"20:32:07","sender":"johnduhart_","msg":"Reedy: Don't see it here http://svn.wikimedia.org/svnroot/mediawiki/trunk/phase3/includes/SpecialPageFactory.php"}
+[20:32:21] * johnduhart_  keeps digging
+{"type":"msg","timestamp":"20:32:30","sender":"Reedy","msg":"grepping might be faster"}
+{"type":"msg","timestamp":"20:33:17","sender":"Reedy","msg":"Think it's from Translate"}
+{"type":"msg","timestamp":"20:34:39","sender":"johnduhart_","msg":"bingo"}
+{"type":"msg","timestamp":"20:34:40","sender":"johnduhart_","msg":"http://svn.wikimedia.org/svnroot/mediawiki/trunk/extensions/Translate/specials/SpecialMyLanguage.php"}
+{"type":"msg","timestamp":"20:34:53","sender":"wikibugs","msg":"03(NEW) Useless "select font" menu on mediawiki.org from WebFonts extension - 10https://bugzilla.wikimedia.org/33460 normal; MediaWiki extensions: WebFonts; (b)"}
+{"type":"msg","timestamp":"20:35:28","sender":"Reedy","msg":"Everyone should go vote on the bug"}
+{"type":"msg","timestamp":"20:35:31","sender":"Reedy","msg":"So it gets done quicker"}
+{"type":"msg","timestamp":"20:36:00","sender":"Joan","msg":"As Nike suggested, it's somehow related to NS:0 and maybe the Languages box?"}
+{"type":"msg","timestamp":"20:36:47","sender":"johnduhart_","msg":"Reedy: lmao"}
+{"type":"msg","timestamp":"20:36:59","sender":"Joan","msg":"I'm not quite sure why the menu shows to anyone. Seems like an escaped preference."}
+{"type":"msg","timestamp":"20:37:05","sender":"Reedy","msg":"Votes are srsn biznes"}
+{"type":"msg","timestamp":"20:37:23","sender":"Joan","msg":"But the whole translation process is kind fo a mystery to me."}
+{"type":"msg","timestamp":"20:37:30","sender":"Joan","msg":"Or really anything not in English."}
+{"type":"msg","timestamp":"20:38:36","sender":"Reedy","msg":"I still can't see why everyone can't just english"}
+{"type":"msg","timestamp":"20:38:39","sender":"Reedy","msg":"It's worked for me so far"}
+{"type":"msg","timestamp":"20:38:46","sender":"Joan","msg":"Seriously."}
+{"type":"msg","timestamp":"20:41:54","sender":"Nikerabbit","msg":"johnduhart_: what?"}
+{"type":"msg","timestamp":"20:42:25","sender":"johnduhart_","msg":"Nikerabbit: what what?"}
+{"type":"msg","timestamp":"20:42:31","sender":"Nikerabbit","msg":"johnduhart_: it would have more options if the content/interface/page language would be suitable"}
+{"type":"msg","timestamp":"20:43:06","sender":"johnduhart_","msg":"Nikerabbit: Okay, so why display it if the options aren't available. That's the question."}
+{"type":"msg","timestamp":"20:43:27","sender":"Nikerabbit","msg":"johnduhart_: it's there so that you can disable it"}
+{"type":"msg","timestamp":"20:44:12","sender":"Nikerabbit","msg":"and what are you bullying my special:mylanguage :<"}
+{"type":"msg","timestamp":"20:44:32","sender":"johnduhart_","msg":"Nikerabbit: I'm bullying it because it's not protocol relative, and I don't know why"}
+{"type":"msg","timestamp":"20:44:42","sender":"Nikerabbit","msg":"it is"}
+{"type":"msg","timestamp":"20:44:48","sender":"johnduhart_","msg":"https://mediawiki.org/wiki/Special:MyLanguage/Help:Extension:WebFonts"}
+{"type":"msg","timestamp":"20:44:50","sender":"johnduhart_","msg":"Not it's not"}
+{"type":"msg","timestamp":"20:45:02","sender":"johnduhart_","msg":"No*"}
+{"type":"msg","timestamp":"20:45:27","sender":"Nikerabbit","msg":"$wgOut->redirect( $title->getLocalURL() );"}
+{"type":"msg","timestamp":"20:46:00","sender":"Nikerabbit","msg":"$this->mRedirect = wfExpandUrl( $this->mRedirect, PROTO_CURRENT );"}
+{"type":"msg","timestamp":"20:46:05","sender":"Nikerabbit","msg":"that's as protocal relative as it gets"}
+{"type":"msg","timestamp":"20:46:52","sender":"Reedy","msg":"visit the link above you and end up on non https"}
+{"type":"msg","timestamp":"20:47:27","sender":"johnduhart_","msg":"Nikerabbit: Where are you getting that second line? I'm not seeing that in trunk"}
+[20:47:50] * johnduhart_  svn blame's OutputPage.php
+{"type":"msg","timestamp":"20:48:01","sender":"Nikerabbit","msg":"Status Code:301 Moved Permanently (from cache)"}
+{"type":"msg","timestamp":"20:48:02","sender":"Nikerabbit","msg":"wtf??"}
+{"type":"msg","timestamp":"20:48:28","sender":"Nikerabbit","msg":"johnduhart_: something is redirecting the https to http before it even gets to special:mylanguage"}
+{"type":"msg","timestamp":"20:48:36","sender":"johnduhart_","msg":"wtf"}
+{"type":"msg","timestamp":"20:48:47","sender":"Reedy","msg":"Blame Roan"}
+{"type":"msg","timestamp":"20:49:01","sender":"johnduhart_","msg":"RoanKattouw I think we do need you"}
+{"type":"msg","timestamp":"20:49:06","sender":"Nikerabbit","msg":"found it"}
+{"type":"msg","timestamp":"20:49:16","sender":"Nikerabbit","msg":"mediawiki.org to www.mediawiki.org redirect is not protocal relative"}
+{"type":"msg","timestamp":"20:49:21","sender":"Reedy","msg":"haha"}
+{"type":"msg","timestamp":"20:49:27","sender":"johnduhart_","msg":"oh!"}
+{"type":"msg","timestamp":"20:49:37","sender":"johnduhart_","msg":"I'll fix that"}
+{"type":"msg","timestamp":"20:49:38","sender":"RoanKattouw","msg":"Nikerabbit: Yeah that's probably because it's in an Apache config somewhere"}
+{"type":"msg","timestamp":"20:51:22","sender":"Nikerabbit","msg":"I guess my email about enabling webfonts and narayam never reach to wikitech-l"}
+{"type":"msg","timestamp":"20:52:54","sender":"codurr","msg":"03johnduhart * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107783> 10/trunk/extensions/WebFonts/WebFonts.i18n.php: Protocol relative mw.org needs the www"}
+{"type":"msg","timestamp":"20:53:02","sender":"johnduhart_","msg":"Fixed"}
+{"type":"msg","timestamp":"20:53:11","sender":"Nikerabbit","msg":"johnduhart_: nah, that's just ugly workaround :)"}
+{"type":"msg","timestamp":"20:53:20","sender":"Nikerabbit","msg":"johnduhart_: please tag it with i18ndeploy"}
+{"type":"msg","timestamp":"20:53:35","sender":"johnduhart_","msg":"done"}
+{"type":"msg","timestamp":"20:56:18","sender":"codurr","msg":"New code comment: Johnduhart; Delete [[MediaWiki:Webfonts-help-page]] when deployed please.; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107783#c28744>"}
+{"type":"msg","timestamp":"20:59:33","sender":"Nikerabbit","msg":"RoanKattouw: should we file a bug for that?"}
+{"type":"msg","timestamp":"21:00:27","sender":"RoanKattouw","msg":"Yes, you should"}
+{"type":"msg","timestamp":"21:00:31","sender":"RoanKattouw","msg":"There may be one already"}
+{"type":"msg","timestamp":"21:04:05","sender":"johnduhart_","msg":"I'm sure there is"}
+{"type":"msg","timestamp":"21:04:19","sender":"johnduhart_","msg":"It's a known issue just no one bothered to fix it yet"}
+{"type":"msg","timestamp":"21:06:46","sender":"johnduhart_","msg":"http://noc.wikimedia.org/conf/redirects.conf that's a lot of non-protocol relativeness"}
+{"type":"msg","timestamp":"21:07:48","sender":"codurr","msg":"New code comment: Platonides; Unless you did it in a postprocessing step.; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107773#c28745>"}
+{"type":"msg","timestamp":"21:09:04","sender":"johnduhart_","msg":"Nikerabbit: I'm not sure, would the logs system allow me flexibility to create new channels/logs on the fly?"}
+{"type":"msg","timestamp":"21:09:45","sender":"Nikerabbit","msg":"johnduhart_: subtypes at least"}
+{"type":"msg","timestamp":"21:10:19","sender":"Nikerabbit","msg":"don't know what you mean with channel"}
+{"type":"msg","timestamp":"21:11:12","sender":"johnduhart_","msg":"Nikerabbit: So if I wanted to add a new subtype would that need a configuration change?"}
+{"type":"msg","timestamp":"21:11:28","sender":"johnduhart_","msg":"I guess I'd still have to maintain a table of my channels/subtypes"}
+{"type":"msg","timestamp":"21:12:08","sender":"Nikerabbit","msg":"johnduhart_: no"}
+{"type":"msg","timestamp":"21:12:52","sender":"Nikerabbit","msg":"just register you logformatter to handle everything in your logs"}
+{"type":"msg","timestamp":"21:13:43","sender":"wikibugs","msg":"03(NEW) Translation edits show up on recent changes even if flood flag is on - 10https://bugzilla.wikimedia.org/33461 normal; MediaWiki extensions: Translate; (Thehelpfulonewiki)"}
+{"type":"msg","timestamp":"21:16:59","sender":"wikibugs","msg":"03(mod) Translation edits show up on recent changes even if user has bot right - 10https://bugzilla.wikimedia.org/33461  summary; +comment (10John Du Hart)"}
+{"type":"msg","timestamp":"21:31:20","sender":"wikibugs","msg":"04(REOPENED) SubPageList fails to show subpages in MediaWiki 1.18 - 10https://bugzilla.wikimedia.org/33403  +comment (10badon)"}
+{"type":"msg","timestamp":"21:50:33","sender":"youri","msg":"do you guys use wikieditor ?"}
+{"type":"msg","timestamp":"21:50:39","sender":"youri","msg":"the extension"}
+{"type":"msg","timestamp":"21:50:41","sender":"RoanKattouw","msg":"Yes we do"}
+{"type":"msg","timestamp":"21:50:50","sender":"youri","msg":"i installed it"}
+{"type":"msg","timestamp":"21:50:57","sender":"youri","msg":"works fine but it show beta"}
+{"type":"msg","timestamp":"21:51:05","sender":"youri","msg":"in the personal bar"}
+{"type":"msg","timestamp":"21:51:10","sender":"youri","msg":"i dont want that :/"}
+{"type":"msg","timestamp":"21:51:50","sender":"youri","msg":""beta feedback" and "leave feedback""}
+{"type":"msg","timestamp":"21:51:58","sender":"youri","msg":"is there a way to hide it ?"}
+{"type":"msg","timestamp":"21:58:59","sender":"youri","msg":"?"}
+{"type":"msg","timestamp":"22:05:30","sender":"RoanKattouw","msg":"Oh, sorry, I missed your question"}
+{"type":"msg","timestamp":"22:05:57","sender":"RoanKattouw","msg":"Are you using an old version of WikiEditor, perhaps? Like, the one for MediaWiki 1.16?"}
+{"type":"msg","timestamp":"22:06:19","sender":"youri","msg":"i'm not sure but i thin k a use 1.18"}
+{"type":"msg","timestamp":"22:16:14","sender":"Platonides","msg":"a guy has a repo with many mediawiki extensions"}
+{"type":"msg","timestamp":"22:16:24","sender":"Platonides","msg":"I send him a mail noting a bug with a one-line patch"}
+{"type":"msg","timestamp":"22:16:35","sender":"Platonides","msg":"His answer: \"Thanks for this but I do not maintain my Mediawiki extensions anymore."}
+{"type":"msg","timestamp":"22:16:37","sender":"Platonides","msg":":/"}
+{"type":"msg","timestamp":"22:17:07","sender":"Dantman","msg":"Platonides: ;) Then it's time to start importing his stuff into our svn and taking over completely"}
+{"type":"msg","timestamp":"22:17:26","sender":"youri","msg":"nvm, fixed :D"}
+{"type":"msg","timestamp":"22:17:39","sender":"Platonides","msg":"it's a good reason for having things in our repo"}
+{"type":"msg","timestamp":"22:18:06","sender":"Platonides","msg":"but his reply baffled me"}
+{"type":"msg","timestamp":"22:18:35","sender":"youri","msg":"do you know a way to highlight the active link in sidebar"}
+{"type":"msg","timestamp":"22:18:56","sender":"youri","msg":"like if we are in index, the index link in sidebar would be different"}
+{"type":"msg","timestamp":"22:19:28","sender":"youri","msg":"i heard you have to modify in php put a class in the div but i cant find where in the php"}
+{"type":"msg","timestamp":"22:21:46","sender":"wikibugs","msg":"14(INVALID) SubPageList fails to show subpages in MediaWiki 1.18 - 10https://bugzilla.wikimedia.org/33403  +comment (10badon)"}
+{"type":"msg","timestamp":"22:22:54","sender":"TimStarling","msg":"Platonides: making an extension doesn't mean you become its slave for life"}
+{"type":"msg","timestamp":"22:32:00","sender":"codurr","msg":"03tstarling * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107784> 10/trunk/extensions/LabeledSectionTransclusion/lst.php: Fix comments from r95343"}
+{"type":"msg","timestamp":"22:33:18","sender":"codurr","msg":"New code comment: Tim Starling; It's actually bug 23407.; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/95343#c28746>"}
+{"type":"msg","timestamp":"22:36:10","sender":"Platonides","msg":"TimStarling, I wouldn't have been too much surprised if I were asking him to debug something"}
+{"type":"msg","timestamp":"22:36:41","sender":"Platonides","msg":"it was the \"no, I won't add this simple fix\" what confused me"}
+{"type":"msg","timestamp":"22:36:54","sender":"TimStarling","msg":"at least he was honest with you and didn't just put your email on an endless todo list"}
+{"type":"msg","timestamp":"22:37:00","sender":"Platonides","msg":"true"}
+{"type":"msg","timestamp":"22:50:41","sender":"wikibugs","msg":"03(mod) syntax to transclude a page without the containing page inheriting categories, interlanguage links - 10https://bugzilla.wikimedia.org/835  +comment (10Krinkle)"}
+{"type":"msg","timestamp":"22:50:54","sender":"codurr","msg":"03tstarling * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107785> 10/trunk/extensions/ProofreadPage/ProofreadPage_body.php: Fixed weak comparison with null from r95338."}
+{"type":"msg","timestamp":"22:53:43","sender":"wikibugs","msg":"03(mod) no feed in irc for changes to lqt - 10https://bugzilla.wikimedia.org/33387  +comment (10benapetr)"}
+{"type":"msg","timestamp":"22:58:10","sender":"wikibugs","msg":"03(mod) Special:WantedFiles is limited to 1000 files total (not just per page) - 10https://bugzilla.wikimedia.org/33455  +comment (10Krinkle)"}
+{"type":"msg","timestamp":"23:04:01","sender":"wikibugs","msg":"03(mod) Add a filter to Special:WantedFiles to remove the false positives - 10https://bugzilla.wikimedia.org/33446  +comment (10krinklemail)"}
+{"type":"msg","timestamp":"23:04:13","sender":"wikibugs","msg":"03(mod) syntax to transclude a page without the containing page inheriting categories, interlanguage links - 10https://bugzilla.wikimedia.org/835  +comment (10bawolff+wn)"}
+{"type":"msg","timestamp":"23:04:49","sender":"wikibugs","msg":"03(mod) Add a filter to Special:WantedFiles to remove the false positives - 10https://bugzilla.wikimedia.org/33446  +comment (10krinklemail)"}
+{"type":"msg","timestamp":"23:07:10","sender":"johnduhart_","msg":"holy shit https://en.wikipedia.org/wiki/Template:Pie_chart"}
+{"type":"msg","timestamp":"23:07:15","sender":"johnduhart_","msg":"wow"}
+{"type":"msg","timestamp":"23:07:28","sender":"johnduhart_","msg":"Piecharts using only wikitext"}
+{"type":"msg","timestamp":"23:07:50","sender":"wikibugs","msg":"03(mod) no feed in irc for changes to lqt - 10https://bugzilla.wikimedia.org/33387  +comment (10sam)"}
+{"type":"msg","timestamp":"23:08:03","sender":"codurr","msg":"New code comment: Bawolff; Good catch. :); <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107772#c28747>"}
+{"type":"msg","timestamp":"23:11:12","sender":"wikibugs","msg":"03(NEW) Allow and display both wiki name and shell name in dialogs - 10https://bugzilla.wikimedia.org/33462 normal; MediaWiki extensions: OpenStackManager; (rlane32)"}
+{"type":"msg","timestamp":"23:15:33","sender":"wikibugs","msg":"03(mod) Shared repositories support for Special:WantedFiles - 10https://bugzilla.wikimedia.org/6220  +comment (10Krinkle)"}
+{"type":"msg","timestamp":"23:16:59","sender":"wikibugs","msg":"03(mod) Shared repositories support for Special:WantedFiles - 10https://bugzilla.wikimedia.org/6220  +comment (10krinklemail)"}
+{"type":"msg","timestamp":"23:17:06","sender":"Krinkle","msg":"!seen Bawolff"}
+{"type":"msg","timestamp":"23:17:07","sender":"Petanbot","msg":"bawolff (~bawolff@wikinews/bawolff) was last seen quitting from #mediawiki 10 hours, 29 minutes ago stating (Quit: ChatZilla 0.9.88 {[Iceweasel} 3.5.16/20110302220840\])."}
+{"type":"msg","timestamp":"23:20:48","sender":"codurr","msg":"New code comment: Tim Starling; It seems to me that this special page would be much easier to write if it wasn't a QueryPage subclas; <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/95347#c28748>"}
+{"type":"msg","timestamp":"23:21:43","sender":"codurr","msg":"03reedy * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107786> 10/trunk/extensions/DSMW/api/upload/:"}
+{"type":"msg","timestamp":"23:21:43","sender":"codurr","msg":"Kill upload class back compat duplicates"}
+{"type":"msg","timestamp":"23:21:43","sender":"codurr","msg":"Not used in code"}
+{"type":"msg","timestamp":"23:23:17","sender":"codurr","msg":"03krinkle * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107787> 10/trunk/extensions/WebFonts/resources/ext.webfonts.css:"}
+{"type":"msg","timestamp":"23:23:17","sender":"codurr","msg":"[WebFonts] fix #pt-webfonts icon position"}
+{"type":"msg","timestamp":"23:23:17","sender":"codurr","msg":"* Core uses padding-left 15px for a 13px-wide icon"}
+{"type":"msg","timestamp":"23:23:17","sender":"codurr","msg":"* So this should use padding-left 18px as this icon is 16px wide. Before the icon was slightly overlaying the left edge of the label, now there's padding in between, like there for core #pt-userpage"}
+{"type":"msg","timestamp":"23:23:17","sender":"codurr","msg":"* Also removed redundant background properties, same as core #pt-userpage stylings"}
+{"type":"msg","timestamp":"23:26:05","sender":"wikibugs","msg":"03(mod) Link to switch to http/https version of current page - 10https://bugzilla.wikimedia.org/32690  +comment (10Platonides)"}
+{"type":"msg","timestamp":"23:27:42","sender":"Dantman","msg":"Stinking OS X... I can't send F6 through a terminal"}
+{"type":"msg","timestamp":"23:28:22","sender":"codurr","msg":"03reedy * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107788> 10/trunk/phase3/includes/upload/UploadFromChunks.php:"}
+{"type":"msg","timestamp":"23:28:23","sender":"codurr","msg":"Tidyup outputChunk added in r104687, remove/update documentation"}
+{"type":"msg","timestamp":"23:28:23","sender":"codurr","msg":"Don't use undefined $path variable on line 265"}
+{"type":"msg","timestamp":"23:29:00","sender":"wikibugs","msg":"03(mod) Offer SVGs as being rendered in PNG on File pages - 10https://bugzilla.wikimedia.org/24619  +comment (10Krinkle)"}
+{"type":"msg","timestamp":"23:31:20","sender":"wikibugs","msg":"03(mod) Invalid action page should probably not have HTTP status 200 - 10https://bugzilla.wikimedia.org/24144  +comment (10Krinkle)"}
+{"type":"msg","timestamp":"23:31:24","sender":"codurr","msg":"03reedy * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107789> 10/trunk/phase3/includes/filerepo/LocalRepo.php: Followup r99892, actually use $options in query"}
+{"type":"msg","timestamp":"23:33:11","sender":"wikibugs","msg":"03(mod) Shared repositories support for Special:WantedFiles - 10https://bugzilla.wikimedia.org/6220  +comment (10bawolff+wn)"}
+{"type":"msg","timestamp":"23:33:44","sender":"codurr","msg":"03reedy * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107790> 10/trunk/phase3/includes/filerepo/FileRepo.php:"}
+{"type":"msg","timestamp":"23:33:44","sender":"codurr","msg":"Followup r106752"}
+{"type":"msg","timestamp":"23:33:44","sender":"codurr","msg":"Use $file in unlink, rather than the undefined $path"}
+{"type":"msg","timestamp":"23:35:24","sender":"codurr","msg":"03reedy * <https://www.mediawiki.org/wiki/Special:Code/MediaWiki/107791> 10/trunk/phase3/includes/ (6 files in 4 dirs):"}
+{"type":"msg","timestamp":"23:35:24","sender":"codurr","msg":"Cleanup a few unused variables"}
+{"type":"msg","timestamp":"23:35:24","sender":"codurr","msg":"Mainly indexes in foreach loops"}
+{"type":"msg","timestamp":"23:46:51","sender":"wikibugs","msg":"03(mod) \"Auto-number headings\" cause broken looked links - 10https://bugzilla.wikimedia.org/32777  +comment (10Krinkle)"}
+{"type":"msg","timestamp":"23:52:08","sender":"wikibugs","msg":"03(mod) Wrap automatic numbering for section headings in a container with a specific class - 10https://bugzilla.wikimedia.org/33450  +comment (10Krinkle)"}
+{"type":"msg","timestamp":"23:53:50","sender":"wikibugs","msg":"03(mod) Wrap automatic numbering for section headings in a container with a specific class - 10https://bugzilla.wikimedia.org/33450  +comment (10Krinkle)"}
