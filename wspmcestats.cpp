@@ -168,6 +168,7 @@ struct test_result {
     void calc_stats() {
         total_payload = 0;
         total_frame_overhead = 0;
+        total_frame_overhead_compressed = 0;
         total_compressed_size = 0;
         total_ratio = 0;
 
