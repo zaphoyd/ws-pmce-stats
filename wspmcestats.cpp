@@ -237,6 +237,8 @@ struct test_result {
                   << "ms\n" << std::endl;
 
         if (sending) {
+            double mem_score = ((1.0 - total_ratio)*100.0) / (double(mem_usage) / 1024.0);
+
             std::cout << "Memory used: " << double(mem_usage)/1024.0 << "KiB " 
                       << (context_takeover ? "per connection" : "total") 
                       << " for compression state." << std::endl;
@@ -244,6 +246,7 @@ struct test_result {
                       << double(mem_usage_inflate_32)/1024.0 << "KiB (32 bit systems), "
                       << double(mem_usage_inflate_64)/1024.0 << "KiB (64 bit systems)"
                       << std::endl;
+            std::cout << "Memory efficiency score: " << mem_score << " % Compression per KiB of memory" << std::endl; 
         } else {
             std::cout << "Memory used: " << double(mem_usage)/1024.0 << "KiB " 
                       << (context_takeover ? "per connection" : "total") 
